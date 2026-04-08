@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Contacto | TuNombreCatering · Hablamos de tu evento</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS Contacto -->
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">TuNombreCatering</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="menus.html">Menús</a></li>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO CONTACTO ========== -->
+    <section class="contacto-hero">
+        <div class="container">
+            <div class="section-subtitle">Hablemos</div>
+            <h1>¿Tienes un evento en mente?</h1>
+            <p>Cuéntanos tu idea. Te asesoramos sin compromiso y te preparamos un presupuesto a medida.</p>
+        </div>
+    </section>
+
+    <!-- ========== INFO DE CONTACTO (TARJETAS) ========== -->
+    <div class="container">
+        <div class="info-contacto-grid">
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Teléfono</h3>
+                <p><a href="tel:+34123456789">+34 123 456 789</a></p>
+                <p><a href="tel:+34987654321">+34 987 654 321</a></p>
+                <p style="font-size: 0.7rem; margin-top: 0.5rem;">Lun a Vie · 9:00 - 18:00</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:hola@tunombrecatering.com">hola@tunombrecatering.com</a></p>
+                <p><a href="mailto:eventos@tunombrecatering.com">eventos@tunombrecatering.com</a></p>
+                <p style="font-size: 0.7rem; margin-top: 0.5rem;">Respuesta en &lt;24h</p>
+            </div>
+            <div class="info-card">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/34123456789">+34 123 456 789</a></p>
+                <p style="font-size: 0.7rem; margin-top: 0.5rem;">Consultas rápidas por chat</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FORMULARIO + MAPA ========== -->
+    <div class="container">
+        <div class="formulario-mapa">
+            <!-- FORMULARIO -->
+            <div class="formulario-contacto">
+                <h2>Envíanos un mensaje</h2>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="evento">Tipo de evento *</label>
+                            <select id="evento" name="evento" required>
+                                <option value="">Selecciona...</option>
+                                <option value="boda">Boda</option>
+                                <option value="corporativo">Evento corporativo</option>
+                                <option value="privado">Fiesta privada / Cumpleaños</option>
+                                <option value="comunion">Comunión / Bautizo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha estimada del evento</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="invitados">Número aproximado de invitados</label>
+                        <input type="number" id="invitados" name="invitados" placeholder="Ej: 80">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Cuéntanos tu idea *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"
+                            placeholder="¿Qué tipo de evento tienes en mente? ¿Necesitas espacio? ¿Tienes alguna preferencia gastronómica?"
+                            required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">He leído y acepto la <a href="aviso-legal.html"
+                                style="color: #c0a070;">política de privacidad</a> *</label>
+                    </div>
+                    <button type="submit" class="btn btn-enviar">Enviar mensaje <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+                <div id="formMessage" style="margin-top: 1rem;"></div>
+            </div>
+
+            <!-- MAPA Y DIRECCIONES -->
+            <div class="mapa-container">
+                <h2>¿Dónde estamos?</h2>
+                <div class="mapa-embed">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1x3037.301826858294!2d-3.703801524293037!3d40.41677537142785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287a1d8b178d%3A0x49b38d8e04b2f49c!2sPuerta%20del%20Sol%2C%20Madrid!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="direcciones">
+                    <div class="direccion-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Oficina central</strong><br>
+                                Calle Ejemplo, 123<br>
+                                28001 Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="direccion-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <p><strong>Delegación Barcelona</strong><br>
+                                Avenida Diagonal, 456<br>
+                                08021 Barcelona</p>
+                        </div>
+                    </div>
+                    <div class="direccion-item">
+                        <i class="fas fa-city"></i>
+                        <div>
+                            <p><strong>Delegación Valencia</strong><br>
+                                Calle Colón, 78<br>
+                                46004 Valencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== HORARIOS ========== -->
+    <div class="container">
+        <div class="horarios">
+            <h2>Horario de atención</h2>
+            <div class="horarios-grid">
+                <div class="horario-item">
+                    <i class="fas fa-calendar-day"></i>
+                    <h4>Oficina central</h4>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                    <p>Sábados: 10:00 - 14:00</p>
+                </div>
+                <div class="horario-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>Atención telefónica</h4>
+                    <p>Lunes a Viernes: 9:00 - 20:00</p>
+                    <p>Consultas WhatsApp 24/7</p>
+                </div>
+                <div class="horario-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>Visitas a espacios</h4>
+                    <p>Con cita previa</p>
+                    <p>Flexibilidad horaria</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== PREGUNTAS FRECUENTES ========== -->
+    <div class="container">
+        <div class="faq">
+            <div class="section-subtitle">Resolvemos tus dudas</div>
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>¿Cuánto tiempo antes hay que reservar?</h4>
+                    <p>Recomendamos contactar con al menos 2-3 meses de antelación para bodas, y 1 mes para eventos
+                        corporativos. Siempre estamos abiertos a consultas de última hora.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Trabajáis en toda España?</h4>
+                    <p>Sí. Nuestra base está en Madrid, pero realizamos eventos en toda la península y también en
+                        Baleares y Canarias. Consulta disponibilidad.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Ofrecéis menús para alergias o vegetarianos?</h4>
+                    <p>Por supuesto. Adaptamos cualquier plato a necesidades dietéticas: celíacos, veganos,
+                        intolerancias... Indícalo al hacer tu consulta.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Incluís el servicio de camareros y vajilla?</h4>
+                    <p>Sí. En nuestros presupuestos incluimos personal cualificado, vajilla, cubertería, cristalería y
+                        mantelería. Todo lo necesario para que no te preocupes de nada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CTA FINAL ========== -->
+    <div class="container">
+        <div class="cta-contacto">
+            <h3>¿Prefieres que te llamemos nosotros?</h3>
+            <p>Déjanos tu número y te contactaremos en menos de 24 horas para asesorarte sin compromiso.</p>
+            <a href="tel:+34123456789" class="btn">Llámanos ahora</a>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">TuNombreCatering</div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-copy">© 2025 TuNombreCatering · Gastronomía para eventos · <a href="aviso-legal.html">Aviso
+                    legal</a> | <a href="cookies.html">Política de cookies</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para menú móvil y formulario -->
+    <script>
+        // Menú móvil
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // ========== FORMULARIO CON RESEND (MODO PRUEBA) ==========
+        const form = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        const submitBtn = document.querySelector('.btn-enviar');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Guardar texto original del botón
+            const originalText = submitBtn.innerHTML;
+
+            // Mostrar estado de carga
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitBtn.disabled = true;
+
+            // Recoger datos del formulario
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                email: document.getElementById('email').value,
+                telefono: document.getElementById('telefono').value,
+                evento: document.getElementById('evento').value,
+                fecha: document.getElementById('fecha').value,
+                invitados: document.getElementById('invitados').value,
+                mensaje: document.getElementById('mensaje').value
+            };
+
+            try {
+                // Enviar a tu servidor local
+                const response = await fetch('http://localhost:3000/api/enviar-contacto', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    // Éxito
+                    formMessage.innerHTML = `
+                <div class="alert-success">
+                    <i class="fas fa-check-circle"></i> 
+                    ¡Mensaje enviado correctamente! Te responderemos en menos de 24 horas.
+                </div>
+            `;
+                    form.reset();
+                } else {
+                    throw new Error(result.error || 'Error al enviar');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                formMessage.innerHTML = `
+            <div class="alert-error">
+                <i class="fas fa-exclamation-triangle"></i> 
+                Error al enviar. Asegúrate de que el servidor esté corriendo en http://localhost:3000
+            </div>
+        `;
+            } finally {
+                // Restaurar botón
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+
+                // Ocultar mensaje después de 5 segundos
+                setTimeout(() => {
+                    formMessage.innerHTML = '';
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+
+</html>

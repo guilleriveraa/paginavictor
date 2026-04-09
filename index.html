@@ -37,21 +37,58 @@
         </div>
     </header>
 
-    <!-- ========== HERO (SECCIÓN PRINCIPAL) ========== -->
-    <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-tag">Catering · Eventos · Alta cocina</span>
-                <h1 class="hero-title">Gastronomía que <br>transforma momentos</h1>
-                <p class="hero-desc">Más de 20 años creando experiencias únicas. Cocina de autor, ingredientes de
-                    temporada y un equipo apasionado por hacer de tu evento algo inolvidable.</p>
-                <div class="hero-buttons">
-                    <a href="contacto.html" class="btn">Solicitar presupuesto</a>
-                    <a href="menu.html" class="btn btn-outline">Descubrir menús</a>
+    <!-- ========== CARRUSEL HERO (estilo Viro) ========== -->
+    <section class="hero-carrusel">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="imagenes/catering-1.jpg" alt="Catering para eventos">
+                <div class="slide-content">
+                    <h2>Gastronomía que transforma momentos</h2>
+                    <p>Más de 20 años creando experiencias únicas</p>
                 </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="imagenes/catering-2.jpg" alt="Cocina de autor">
+                <div class="slide-content">
+                    <h2>Cocina de autor</h2>
+                    <p>Ingredientes de temporada y un equipo apasionado</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="imagenes/catering-3.jpg" alt="Eventos exclusivos">
+                <div class="slide-content">
+                    <h2>Eventos exclusivos</h2>
+                    <p>Bodas, corporativos, fiestas privadas</p>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="slider-btn prev" aria-label="Anterior">❮</button>
+            <button class="slider-btn next" aria-label="Siguiente">❯</button>
+
+            <!-- Indicadores (puntos) -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </div>
     </section>
+
+    <!-- Botones de acción debajo del carrusel -->
+    <div class="hero-buttons-container">
+        <div class="container">
+            <div class="hero-buttons">
+                <a href="contacto.html" class="btn">Solicitar presupuesto</a>
+                <a href="menus.html" class="btn btn-outline">Descubrir menús</a>
+            </div>
+        </div>
+    </div>
 
     </div>
     <!-- ========== 3 FOTOS DE EJEMPLO ========== -->

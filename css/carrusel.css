@@ -191,3 +191,41 @@
         gap: 1rem;
     }
 }
+
+/* ========== BAJAR LOS BOTONES DE POSICIÓN ========== */
+.hero-buttons-container {
+    position: relative;
+    z-index: 10;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem 0 3rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Ajuste específico para que los botones estén más abajo */
+.hero-carrusel+.hero-buttons-container {
+    margin-top: 3rem;
+}
+
+/* Si los botones están dentro del carrusel, los sacamos */
+.slider-container .hero-buttons {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-buttons-container {
+        margin-top: 1.5rem;
+        padding: 1rem 0 2rem;
+    }
+
+    .hero-buttons {
+        gap: 1rem;
+    }
+}

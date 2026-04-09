@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Finca Ahijaderas de Pedro Llen | Finca rústica para eventos</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS específico -->
+    <link rel="stylesheet" href="css/finca-ahijaderas.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">TuNombreCatering</div>
+                <ul class="nav-links">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="menu.html">Menús</a></li>
+                    <li><a href="espacios.html">Espacios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="espacio-detalle">
+            <div class="espacio-header">
+                <h1>Finca Ahijaderas de Pedro Llen</h1>
+                <div class="ubicacion"><i class="fas fa-map-marker-alt"></i> Salamanca, España</div>
+            </div>
+
+            <div class="info-principal">
+                <img src="imagenes/finca-principal.jpg" alt="Finca Ahijaderas de Pedro Llen">
+                <div class="descripcion-larga">
+                    <p>La Finca Ahijaderas de Pedro Llen es un entorno rural privilegiado, rodeado de naturaleza y
+                        tranquilidad. Con amplios jardines y zonas verdes, es el lugar ideal para celebrar bodas
+                        campestres y eventos al aire libre.</p>
+                    <p>La finca cuenta con una casa principal rehabilitada, capilla propia para ceremonias religiosas, y
+                        una zona de piscina para disfrutar en los meses de verano.</p>
+                    <p>Su ambiente rústico y acogedor, combinado con los servicios de catering de primer nivel,
+                        garantizan una celebración inolvidable.</p>
+                </div>
+            </div>
+
+            <div class="caracteristicas-detalle">
+                <h3><i class="fas fa-list-check"></i> Características del espacio</h3>
+                <div class="caracteristicas-grid">
+                    <span><i class="fas fa-users"></i> Capacidad: 150-300 personas</span>
+                    <span><i class="fas fa-tree"></i> Jardines privados</span>
+                    <span><i class="fas fa-swimming-pool"></i> Piscina</span>
+                    <span><i class="fas fa-church"></i> Capilla propia</span>
+                    <span><i class="fas fa-parking"></i> Parking gratuito</span>
+                    <span><i class="fas fa-campground"></i> Zona de ceremonias al aire libre</span>
+                    <span><i class="fas fa-bed"></i> Alojamiento para invitados</span>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <h3><i class="fas fa-images"></i> Galería de imágenes</h3>
+                <div class="galeria-grid">
+                    <img src="imagenes/finca-1.jpg" alt="Jardines">
+                    <img src="imagenes/finca-2.jpg" alt="Zona de piscina">
+                    <img src="imagenes/finca-3.jpg" alt="Capilla">
+                    <img src="imagenes/finca-4.jpg" alt="Salón interior">
+                </div>
+            </div>
+
+            <div class="mapa-espacio">
+                <h3><i class="fas fa-map-marked-alt"></i> ¿Dónde estamos?</h3>
+                <p>La finca se encuentra en las afueras de Salamanca, a solo 15 minutos del centro de la ciudad.</p>
+                <div class="mapa-embed">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.301826858294!2d-3.703801524293037!3d40.41677537142785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287a1d8b178d%3A0x49b38d8e04b2f49c!2sPuerta%20del%20Sol%2C%20Madrid!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <a href="espacios.html" class="btn btn-volver"><i class="fas fa-arrow-left"></i> Volver a espacios</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">TuNombreCatering</div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p class="footer-copy">© 2025 TuNombreCatering · Gastronomía para eventos · <a href="aviso-legal.html">Aviso
+                    legal</a> | <a href="cookies.html">Política de cookies</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+
+</html>

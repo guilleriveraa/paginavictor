@@ -1,0 +1,143 @@
+/* ========== FINCA AHIJADERAS DE PEDRO LLEN · ESTILO ESPECÍFICO ========== */
+.espacio-detalle {
+    padding: 4rem 0;
+}
+
+.espacio-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.espacio-header h1 {
+    font-size: 3rem;
+    color: #f5e2c0;
+    margin-bottom: 1rem;
+}
+
+.espacio-header .ubicacion {
+    color: #c0a070;
+    font-size: 1.1rem;
+}
+
+.info-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info-principal img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 1px solid rgba(192, 160, 112, 0.3);
+}
+
+.descripcion-larga p {
+    color: #bbbbbb;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.caracteristicas-detalle {
+    background: #111111;
+    border: 1px solid rgba(192, 160, 112, 0.2);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.caracteristicas-detalle h3 {
+    color: #f0debc;
+    margin-bottom: 1.5rem;
+}
+
+.caracteristicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.caracteristicas-grid span {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.caracteristicas-grid i {
+    color: #c0a070;
+    width: 25px;
+}
+
+.galeria {
+    margin: 3rem 0;
+}
+
+.galeria h3 {
+    color: #f0debc;
+    margin-bottom: 1.5rem;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid rgba(192, 160, 112, 0.2);
+    transition: transform 0.3s;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.02);
+    border-color: #c0a070;
+}
+
+.mapa-espacio {
+    margin: 3rem 0;
+    background: #111111;
+    border: 1px solid rgba(192, 160, 112, 0.2);
+    padding: 2rem;
+}
+
+.mapa-espacio h3 {
+    color: #f0debc;
+    margin-bottom: 1rem;
+}
+
+.mapa-embed {
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+}
+
+.mapa-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .info-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .espacio-header h1 {
+        font-size: 2rem;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}

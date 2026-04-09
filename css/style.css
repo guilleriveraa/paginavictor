@@ -637,3 +637,77 @@ footer {
         height: 220px;
     }
 }
+
+/* ========== HEADER CON FONDO BLANCO Y LETRAS NEGRAS ========== */
+header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #000000;
+    font-weight: 600;
+}
+
+.logo:hover {
+    color: #c0a070;
+}
+
+.nav-links a {
+    color: #000000;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #c0a070;
+}
+
+.menu-toggle {
+    color: #000000;
+}
+
+/* Cuando el menú móvil está activo, fondo blanco también */
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #FFFFFF;
+        padding: 1.5rem;
+    }
+
+    .nav-links a {
+        color: #000000;
+    }
+}
+
+/* ========== FOOTER BLANCO Y NEGRO (opcional) ========== */
+footer {
+    background-color: #FFFFFF;
+    color: #666;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo {
+    color: #000000;
+}
+
+.footer-social a {
+    color: #666;
+}
+
+.footer-social a:hover {
+    color: #c0a070;
+}
+
+.footer-copy {
+    color: #666;
+}
+
+.footer-copy a {
+    color: #666;
+}
+
+.footer-copy a:hover {
+    color: #c0a070;
+}

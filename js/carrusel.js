@@ -1,27 +1,22 @@
-// ========== CARRUSEL HERO ESTILO VIRO ==========
+// ========== CARRUSEL HERO CON AUTO-REPRODUCCIÓN ==========
 document.addEventListener('DOMContentLoaded', function () {
+    // Seleccionar elementos
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     const prevBtn = document.querySelector('.slider-btn.prev');
     const nextBtn = document.querySelector('.slider-btn.next');
 
+    // Verificar que hay slides
+    if (slides.length === 0) return;
+
     let currentSlide = 0;
     let slideInterval;
-    const intervalTime = 5000; // 5 segundos entre cambios
+    let isPlaying = true;
+    const INTERVAL_TIME = 5000; // 5 segundos entre cambios
 
     // Función para mostrar un slide específico
     function showSlide(index) {
-        // Quitar active de todos los slides
-        slides.forEach(slide => {
-            slide.classList.remove('active');
-        });
-
-        // Quitar active de todos los dots
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
-
-        // Ajustar índice si está fuera de rango
+        // Validar índice
         if (index < 0) {
             currentSlide = slides.length - 1;
         } else if (index >= slides.length) {
@@ -30,58 +25,93 @@ document.addEventListener('DOMContentLoaded', function () {
             currentSlide = index;
         }
 
-        // Activar el slide y dot correspondiente
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
+        // Cambiar slides
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentSlide);
+        });
+
+        // Cambiar dots
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentSlide);
+        });
     }
 
-    // Siguiente slide
+    // Siguiente slide (avance automático)
     function nextSlide() {
         showSlide(currentSlide + 1);
-        resetInterval();
     }
 
     // Slide anterior
     function prevSlide() {
         showSlide(currentSlide - 1);
-        resetInterval();
     }
 
-    // Reiniciar el intervalo automático
-    function resetInterval() {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
+    // Iniciar reproducción automática
+    function startAutoPlay() {
+        if (slideInterval) clearInterval(slideInterval);
+        slideInterval = setInterval(() => {
+            nextSlide();
+            console.log('Auto-cambio a slide', (currentSlide + 1) % slides.length); // Para debug
+        }, INTERVAL_TIME);
+        isPlaying = true;
+    }
+
+    // Detener reproducción automática
+    function stopAutoPlay() {
+        if (slideInterval) {
+            clearInterval(slideInterval);
+            slideInterval = null;
+            isPlaying = false;
+        }
+    }
+
+    // Reiniciar auto-reproducción
+    function resetAutoPlay() {
+        if (isPlaying) {
+            stopAutoPlay();
+            startAutoPlay();
+        }
     }
 
     // Eventos de los botones
     if (prevBtn) {
-        prevBtn.addEventListener('click', prevSlide);
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoPlay();
+        });
     }
 
     if (nextBtn) {
-        nextBtn.addEventListener('click', nextSlide);
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoPlay();
+        });
     }
 
     // Eventos de los dots
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             showSlide(index);
-            resetInterval();
+            resetAutoPlay();
         });
     });
-
-    // Iniciar el carrusel automático
-    slideInterval = setInterval(nextSlide, intervalTime);
 
     // Pausar al hacer hover (opcional, como en Viro)
     const carruselContainer = document.querySelector('.hero-carrusel');
     if (carruselContainer) {
         carruselContainer.addEventListener('mouseenter', () => {
-            clearInterval(slideInterval);
+            stopAutoPlay();
         });
 
         carruselContainer.addEventListener('mouseleave', () => {
-            slideInterval = setInterval(nextSlide, intervalTime);
+            if (!isPlaying) {
+                startAutoPlay();
+            }
         });
     }
+
+    // INICIAR AUTO-REPRODUCCIÓN
+    startAutoPlay();
+
+    console.log('Carrusel iniciado - Cambia automáticamente cada', INTERVAL_TIME / 1000, 'segundos');
 });

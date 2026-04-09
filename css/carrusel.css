@@ -5,7 +5,7 @@
     height: 80vh;
     min-height: 500px;
     overflow: hidden;
-    margin-bottom: 0;
+    background-color: #0a0a0a;
 }
 
 .slider-container {
@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
     z-index: 1;
 }
 
@@ -44,14 +44,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
 }
 
 /* Contenido del slide (texto superpuesto) */
 .slide-content {
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     left: 0;
     right: 0;
     text-align: center;
@@ -66,14 +66,16 @@
     font-weight: 500;
     margin-bottom: 1rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: -0.01em;
 }
 
 .slide-content p {
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
 }
 
 /* Botones de navegación */
@@ -84,14 +86,17 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
     font-size: 1.5rem;
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-btn:hover {
@@ -110,7 +115,7 @@
 /* Indicadores (puntos) */
 .slider-dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 0;
     right: 0;
     display: flex;
@@ -130,11 +135,27 @@
 
 .dot.active {
     background: #c0a070;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 .dot:hover {
     background: #c0a070;
+}
+
+/* Botones de acción debajo del carrusel */
+.hero-buttons-container {
+    position: relative;
+    z-index: 10;
+    margin-top: -30px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Responsive */
@@ -142,6 +163,10 @@
     .hero-carrusel {
         height: 60vh;
         min-height: 400px;
+    }
+
+    .slide-content {
+        bottom: 20%;
     }
 
     .slide-content h2 {
@@ -156,5 +181,13 @@
         width: 35px;
         height: 35px;
         font-size: 1rem;
+    }
+
+    .hero-buttons-container {
+        margin-top: -15px;
+    }
+
+    .hero-buttons {
+        gap: 1rem;
     }
 }

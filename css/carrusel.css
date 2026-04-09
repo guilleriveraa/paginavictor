@@ -1,4 +1,4 @@
-/* ========== CARRUSEL HERO ESTILO VIRO ========== */
+/* ========== CARRUSEL HERO ESTILO VIRO (MÚLTIPLE) ========== */
 .hero-carrusel {
     position: relative;
     width: 100%;
@@ -6,6 +6,7 @@
     min-height: 500px;
     overflow: hidden;
     background-color: #0a0a0a;
+    margin-bottom: 2rem;
 }
 
 .slider-container {
@@ -36,7 +37,7 @@
     object-fit: cover;
 }
 
-/* Overlay oscuro para que el texto destaque */
+/* Overlay oscuro */
 .slide::after {
     content: '';
     position: absolute;
@@ -48,7 +49,7 @@
     z-index: 1;
 }
 
-/* Contenido del slide (texto superpuesto) */
+/* Contenido del slide */
 .slide-content {
     position: absolute;
     bottom: 25%;
@@ -67,7 +68,6 @@
     margin-bottom: 1rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: -0.01em;
 }
 
 .slide-content p {
@@ -97,6 +97,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.slider-btn.prev::before {
+    content: "❮";
+}
+
+.slider-btn.next::before {
+    content: "❯";
 }
 
 .slider-btn:hover {
@@ -146,9 +154,9 @@
 .hero-buttons-container {
     position: relative;
     z-index: 10;
-    margin-top: -30px;
+    margin-top: 2rem;
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 1rem 0 3rem;
 }
 
 .hero-buttons {
@@ -181,48 +189,6 @@
         width: 35px;
         height: 35px;
         font-size: 1rem;
-    }
-
-    .hero-buttons-container {
-        margin-top: -15px;
-    }
-
-    .hero-buttons {
-        gap: 1rem;
-    }
-}
-
-/* ========== BAJAR LOS BOTONES DE POSICIÓN ========== */
-.hero-buttons-container {
-    position: relative;
-    z-index: 10;
-    margin-top: 2rem;
-    text-align: center;
-    padding: 2rem 0 3rem;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Ajuste específico para que los botones estén más abajo */
-.hero-carrusel+.hero-buttons-container {
-    margin-top: 3rem;
-}
-
-/* Si los botones están dentro del carrusel, los sacamos */
-.slider-container .hero-buttons {
-    display: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-buttons-container {
-        margin-top: 1.5rem;
-        padding: 1rem 0 2rem;
     }
 
     .hero-buttons {

@@ -94,8 +94,20 @@
                             <input type="tel" id="telefono" name="telefono">
                         </div>
                         <div class="form-group">
-                            <label for="evento">Tipo de evento *</label>
-                            <select id="evento" name="evento" required>
+                            <label for="motivo">Motivo de consulta *</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="">Selecciona el motivo...</option>
+                                <option value="reserva">📅 Reserva / Presupuesto para evento</option>
+                                <option value="consulta">❓ Consulta general / Duda</option>
+                                <option value="menu">🍽️ Pregunta sobre menús</option>
+                                <option value="espacio">🏛️ Consulta sobre espacios disponibles</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row" id="eventoRow">
+                        <div class="form-group">
+                            <label for="evento">Tipo de evento</label>
+                            <select id="evento" name="evento">
                                 <option value="">Selecciona...</option>
                                 <option value="boda">Boda</option>
                                 <option value="corporativo">Evento corporativo</option>
@@ -104,20 +116,30 @@
                                 <option value="otro">Otro</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha estimada del evento</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+                    </div>
+                    <div class="form-row" id="invitadosRow">
+                        <div class="form-group">
+                            <label for="invitados">Número aproximado de invitados</label>
+                            <input type="number" id="invitados" name="invitados" placeholder="Ej: 80">
+                        </div>
+                        <div class="form-group" id="espacioGroup" style="display: none;">
+                            <label for="espacioInteres">Espacio de interés</label>
+                            <select id="espacioInteres" name="espacioInteres">
+                                <option value="">Selecciona un espacio...</option>
+                                <option value="finca-optimist">Finca Optimist</option>
+                                <option value="finca-najaraya">Finca Najaraya</option>
+                                <option value="sala-invernadero">Sala 18 · Invernadero</option>
+                                <option value="otro">Otro / No lo sé</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="fecha">Fecha estimada del evento</label>
-                        <input type="date" id="fecha" name="fecha">
-                    </div>
-                    <div class="form-group">
-                        <label for="invitados">Número aproximado de invitados</label>
-                        <input type="number" id="invitados" name="invitados" placeholder="Ej: 80">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Cuéntanos tu idea *</label>
-                        <textarea id="mensaje" name="mensaje" rows="5"
-                            placeholder="¿Qué tipo de evento tienes en mente? ¿Necesitas espacio? ¿Tienes alguna preferencia gastronómica?"
-                            required></textarea>
+                        <label for="mensaje">Tu mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                     </div>
                     <div class="form-group checkbox-group">
                         <input type="checkbox" id="privacidad" name="privacidad" required>
@@ -249,87 +271,8 @@
         </div>
     </footer>
 
-    <!-- JavaScript para menú móvil y formulario -->
-    <script>
-        // Menú móvil
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        }
-
-        // ========== FORMULARIO CON RESEND (MODO PRUEBA) ==========
-        const form = document.getElementById('contactForm');
-        const formMessage = document.getElementById('formMessage');
-        const submitBtn = document.querySelector('.btn-enviar');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            // Guardar texto original del botón
-            const originalText = submitBtn.innerHTML;
-
-            // Mostrar estado de carga
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-            submitBtn.disabled = true;
-
-            // Recoger datos del formulario
-            const formData = {
-                nombre: document.getElementById('nombre').value,
-                email: document.getElementById('email').value,
-                telefono: document.getElementById('telefono').value,
-                evento: document.getElementById('evento').value,
-                fecha: document.getElementById('fecha').value,
-                invitados: document.getElementById('invitados').value,
-                mensaje: document.getElementById('mensaje').value
-            };
-
-            try {
-                // Enviar a tu servidor local
-                const response = await fetch('http://localhost:3000/api/enviar-contacto', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                const result = await response.json();
-
-                if (response.ok && result.success) {
-                    // Éxito
-                    formMessage.innerHTML = `
-                <div class="alert-success">
-                    <i class="fas fa-check-circle"></i> 
-                    ¡Mensaje enviado correctamente! Te responderemos en menos de 24 horas.
-                </div>
-            `;
-                    form.reset();
-                } else {
-                    throw new Error(result.error || 'Error al enviar');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                formMessage.innerHTML = `
-            <div class="alert-error">
-                <i class="fas fa-exclamation-triangle"></i> 
-                Error al enviar. Asegúrate de que el servidor esté corriendo en http://localhost:3000
-            </div>
-        `;
-            } finally {
-                // Restaurar botón
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-
-                // Ocultar mensaje después de 5 segundos
-                setTimeout(() => {
-                    formMessage.innerHTML = '';
-                }, 5000);
-            }
-        });
-    </script>
+    <!-- JavaScript externo -->
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>

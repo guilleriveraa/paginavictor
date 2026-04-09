@@ -681,7 +681,7 @@ header {
     }
 }
 
-/* ========== FOOTER BLANCO Y NEGRO (opcional) ========== */
+/* ========== FOOTER BLANCO Y NEGRO (opcional) ========== 
 footer {
     background-color: #FFFFFF;
     color: #666;
@@ -710,4 +710,4 @@ footer {
 
 .footer-copy a:hover {
     color: #c0a070;
-}
+} */

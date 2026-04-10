@@ -11,9 +11,10 @@
         rel="stylesheet">
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- CSS Servicios -->
-    <link rel="stylesheet" href="css/servicios.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/carrusel.css">
 </head>
 
 <body>
@@ -49,6 +50,49 @@
             <h1>Servicios de catering<br>a medida</h1>
             <p>Más de 20 años creando experiencias gastronómicas únicas. Te asesoramos en cada paso para que tu evento
                 sea inolvidable.</p>
+        </div>
+    </section>
+
+    <!-- ========== CARRUSEL ========== -->
+    <section class="hero-carrusel">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="img/catering.png" alt="Catering para eventos">
+                <div class="slide-content">
+                    <h2>Gastronomía que transforma momentos</h2>
+                    <p>Más de 20 años creando experiencias únicas</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="img/catering_lugar2.png" alt="Cocina de autor">
+                <div class="slide-content">
+                    <h2>Cocina de autor</h2>
+                    <p>Ingredientes de temporada y un equipo apasionado</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="img/foto_catering14.png" alt="Eventos exclusivos">
+                <div class="slide-content">
+                    <h2>Eventos exclusivos</h2>
+                    <p>Bodas, corporativos, fiestas privadas</p>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="slider-btn prev" aria-label="Anterior"></button>
+            <button class="slider-btn next" aria-label="Siguiente"></button>
+
+            <!-- Indicadores (puntos) -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
     </section>
 
@@ -248,14 +292,18 @@
         <div class="container">
             <div class="footer-logo">Catering Viró</div>
             <div class="footer-social">
-                <a href="https://www.instagram.com/virogastrobar/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/virogastrobar/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
                 <a href="https://www.facebook.com/virogastrobar/?locale=es_ES" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/virogastrobar" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-x-twitter"></i></a>
+                    rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/virogastrobar" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
                 <a href="https://www.tripadvisor.es/Restaurant_Review-g658372-d12846557-Reviews-Viro_Gastrobar-Guijuelo_Province_of_Salamanca_Castile_and_Leon.html"
-                    target="_blank" rel="noopener noreferrer"><i class="fab fa-tripadvisor"></i>
+                    target="_blank" rel="noopener noreferrer">
                     <img src="img/logo.svg" alt="Tripadvisor" class="social-svg">
                 </a>
             </div>
@@ -264,8 +312,9 @@
         </div>
     </footer>
 
-    <!-- JavaScript para menú móvil -->
+    <!-- JavaScript -->
     <script>
+        // Menú móvil
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
         if (menuToggle) {
@@ -274,6 +323,7 @@
             });
         }
     </script>
+    <script src="js/carrusel.js"></script>
 </body>
 
 </html>

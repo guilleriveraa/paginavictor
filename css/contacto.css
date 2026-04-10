@@ -1,162 +1,25 @@
-/* ========== CONTACTO PAGE · ESTILO VIRO GASTROBAR ========== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ========== CONTACTO PAGE · ESTILO COHERENTE ========== */
 
-body {
-    background-color: #0a0a0a;
-    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
-    color: #e5e5e5;
-    line-height: 1.5;
-}
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-/* Tipografía */
-h1,
-h2,
-h3,
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-}
-
-h1 {
-    font-size: 3rem;
-    color: #f5e2c0;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-    color: #f5e2c0;
-    margin-bottom: 1.5rem;
-    border-left: 3px solid #c0a070;
-    padding-left: 1rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-    color: #f0debc;
-    margin-bottom: 0.8rem;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: #c0a070;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 4px;
-    margin-bottom: 0.75rem;
-}
-
-/* ========== BOTONES ========== */
-.btn {
-    display: inline-block;
-    background: transparent;
-    border: 1.5px solid #c0a070;
-    color: #e0bc8c;
-    padding: 12px 32px;
-    border-radius: 0;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-}
-
-.btn:hover {
-    background: #c0a070;
-    color: #0a0a0a;
-}
-
-.btn-enviar {
-    width: 100%;
-    padding: 14px;
-    font-size: 0.85rem;
-}
-
-/* ========== HEADER ========== */
-header {
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(192, 160, 112, 0.25);
-    background: #0a0a0a;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #f5e2c0;
-    text-decoration: none;
-}
-
-.logo:hover {
-    color: #c0a070;
-    text-decoration: none;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #e5e5e5;
-    font-weight: 400;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #c0a070;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #e5e5e5;
-}
-
-/* ========== HERO CONTACTO ========== */
+/* Hero */
 .contacto-hero {
     text-align: center;
     padding: 60px 0 40px;
-    border-bottom: 1px solid rgba(192, 160, 112, 0.2);
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contacto-hero h1 {
+    color: #1a1a1a;
 }
 
 .contacto-hero p {
     max-width: 700px;
     margin: 0 auto;
-    color: #bbbbbb;
+    color: #555555;
     font-size: 1rem;
 }
 
-/* ========== INFO DE CONTACTO ========== */
+/* Info de contacto (tarjetas) */
 .info-contacto-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -165,8 +28,8 @@ header {
 }
 
 .info-card {
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     padding: 2rem;
     text-align: center;
     transition: transform 0.3s;
@@ -174,7 +37,7 @@ header {
 
 .info-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(192, 160, 112, 0.5);
+    border-color: #c0a070;
 }
 
 .info-card i {
@@ -184,16 +47,17 @@ header {
 }
 
 .info-card h3 {
+    color: #1a1a1a;
     margin-bottom: 0.5rem;
 }
 
 .info-card p {
-    color: #bbbbbb;
+    color: #555555;
     margin-bottom: 0.3rem;
 }
 
 .info-card a {
-    color: #bbbbbb;
+    color: #555555;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -202,7 +66,7 @@ header {
     color: #c0a070;
 }
 
-/* ========== FORMULARIO + MAPA ========== */
+/* Formulario + Mapa */
 .formulario-mapa {
     display: flex;
     gap: 3rem;
@@ -212,8 +76,8 @@ header {
 
 .formulario-contacto {
     flex: 1;
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     padding: 2rem;
 }
 
@@ -222,6 +86,7 @@ header {
     padding-left: 0;
     text-align: center;
     margin-bottom: 1.5rem;
+    color: #1a1a1a;
 }
 
 .form-group {
@@ -241,9 +106,9 @@ header {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    background: #0a0a0a;
-    border: 1px solid rgba(192, 160, 112, 0.3);
-    color: #e5e5e5;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    color: #1a1a1a;
     font-family: 'Inter', sans-serif;
     transition: border-color 0.3s;
 }
@@ -274,13 +139,14 @@ header {
 .checkbox-group label {
     margin-bottom: 0;
     font-size: 0.8rem;
+    color: #555555;
 }
 
-/* ========== MAPA ========== */
+/* Mapa */
 .mapa-container {
     flex: 1;
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     overflow: hidden;
 }
 
@@ -289,6 +155,7 @@ header {
     padding-left: 0;
     text-align: center;
     margin: 1.5rem 1.5rem 0;
+    color: #1a1a1a;
 }
 
 .mapa-embed {
@@ -306,33 +173,51 @@ header {
 
 .direcciones {
     padding: 1.5rem;
-    border-top: 1px solid rgba(192, 160, 112, 0.2);
+    border-top: 1px solid #e0e0e0;
 }
 
 .direccion-item {
-    margin-bottom: 1rem;
     display: flex;
     gap: 1rem;
     align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: #ffffff;
+    border-left: 3px solid #c0a070;
+    transition: all 0.3s ease;
+}
+
+.direccion-item:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
 }
 
 .direccion-item i {
+    font-size: 1.5rem;
     color: #c0a070;
-    margin-top: 0.2rem;
 }
 
 .direccion-item p {
-    color: #bbbbbb;
-    font-size: 0.85rem;
+    color: #555555;
+    font-size: 0.9rem;
 }
 
-/* ========== HORARIOS ========== */
+.direccion-item strong {
+    color: #1a1a1a;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Horarios */
 .horarios {
     margin: 3rem 0;
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     padding: 2rem;
     text-align: center;
+}
+
+.horarios h2 {
+    color: #1a1a1a;
 }
 
 .horarios-grid {
@@ -343,11 +228,6 @@ header {
     margin-top: 1.5rem;
 }
 
-.horario-item {
-    text-align: center;
-    min-width: 200px;
-}
-
 .horario-item i {
     font-size: 2rem;
     color: #c0a070;
@@ -355,18 +235,22 @@ header {
 }
 
 .horario-item h4 {
-    color: #f0debc;
+    color: #1a1a1a;
     margin-bottom: 0.5rem;
 }
 
 .horario-item p {
-    color: #bbbbbb;
+    color: #555555;
     font-size: 0.9rem;
 }
 
-/* ========== PREGUNTAS FRECUENTES ========== */
+/* FAQ */
 .faq {
     margin: 4rem 0;
+}
+
+.faq h2 {
+    color: #1a1a1a;
 }
 
 .faq-grid {
@@ -377,8 +261,8 @@ header {
 }
 
 .faq-item {
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     padding: 1.5rem;
 }
 
@@ -389,131 +273,26 @@ header {
 }
 
 .faq-item p {
-    color: #bbbbbb;
+    color: #555555;
     font-size: 0.85rem;
 }
 
-/* ========== CTA FINAL ========== */
+/* CTA contacto */
 .cta-contacto {
     text-align: center;
     padding: 3rem 2rem;
-    background: #0e0e0e;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     margin: 3rem 0;
 }
 
 .cta-contacto h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #1a1a1a;
 }
 
-.cta-contacto .btn {
-    margin-top: 1rem;
-}
-
-/* ========== FOOTER ========== */
-footer {
-    background: #050505;
-    color: #777;
-    padding: 40px 0;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.footer-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: #c0a070;
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.footer-social a {
-    color: #777;
-    font-size: 1.2rem;
-    margin: 0 8px;
-    transition: color 0.3s;
-}
-
-.footer-social a:hover {
-    color: #c0a070;
-}
-
-.footer-copy {
-    margin-top: 1.5rem;
-    font-size: 0.75rem;
-}
-
-.footer-copy a {
-    color: #777;
-    text-decoration: none;
-}
-
-.footer-copy a:hover {
-    color: #c0a070;
-}
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        padding: 1.5rem 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .formulario-mapa {
-        flex-direction: column;
-    }
-
-    .faq-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ========== ALERTAS ========== */
-.alert-success {
-    background: rgba(76, 175, 80, 0.2);
-    border: 1px solid #4CAF50;
-    color: #4CAF50;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.alert-error {
-    background: rgba(244, 67, 54, 0.2);
-    border: 1px solid #f44336;
-    color: #f44336;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-/* ========== ALERTAS PARA RESEND ========== */
+/* Alertas */
 .alert-success {
     background: rgba(76, 175, 80, 0.15);
     border: 1px solid #4CAF50;
@@ -546,144 +325,21 @@ footer {
     }
 }
 
-/* ========== DIRECCIONES MÁS GRANDES Y LEGIBLES ========== */
-.direcciones {
-    margin-top: 1.5rem;
-    padding: 1rem;
-}
-
-.direccion-item {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-    padding: 0.8rem;
-    background: rgba(17, 17, 17, 0.8);
-    border-left: 3px solid #c0a070;
-    transition: all 0.3s ease;
-}
-
-.direccion-item:hover {
-    background: #1a1a1a;
-    transform: translateX(5px);
-}
-
-.direccion-item i {
-    font-size: 1.8rem;
-    color: #c0a070;
-    margin-top: 0.2rem;
-}
-
-.direccion-item div {
-    flex: 1;
-}
-
-.direccion-item p {
-    color: #e5e5e5;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 0.3rem;
-}
-
-.direccion-item strong {
-    color: #f5e2c0;
-    font-size: 1.1rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 0.3rem;
-}
-
-/* Versión responsive para móviles */
+/* Responsive */
 @media (max-width: 768px) {
-    .direccion-item i {
-        font-size: 1.4rem;
+    .contacto-hero h1 {
+        font-size: 2rem;
     }
 
-    .direccion-item p {
-        font-size: 0.9rem;
+    .form-row {
+        grid-template-columns: 1fr;
     }
 
-    .direccion-item strong {
-        font-size: 1rem;
-    }
-}
-
-/* ========== DIRECCIONES ESTILO TARJETAS ========== */
-.direcciones {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.direccion-item {
-    display: flex;
-    gap: 1.2rem;
-    align-items: center;
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
-    border-radius: 0;
-    padding: 1.2rem;
-    transition: all 0.3s ease;
-}
-
-.direccion-item:hover {
-    border-color: #c0a070;
-    background: #1a1a1a;
-}
-
-.direccion-item i {
-    font-size: 2rem;
-    color: #c0a070;
-    min-width: 45px;
-    text-align: center;
-}
-
-.direccion-item div {
-    flex: 1;
-}
-
-.direccion-item strong {
-    display: block;
-    color: #f5e2c0;
-    font-size: 1.1rem;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 0.5rem;
-}
-
-.direccion-item p {
-    color: #e5e5e5;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.direccion-item .rating {
-    display: inline-block;
-    background: rgba(192, 160, 112, 0.15);
-    padding: 0.2rem 0.6rem;
-    font-size: 0.8rem;
-    color: #c0a070;
-    margin-top: 0.3rem;
-    border-radius: 0;
-}
-
-@media (max-width: 768px) {
-    .direccion-item {
-        padding: 1rem;
-        gap: 0.8rem;
+    .formulario-mapa {
+        flex-direction: column;
     }
 
-    .direccion-item i {
-        font-size: 1.5rem;
-        min-width: 35px;
-    }
-
-    .direccion-item strong {
-        font-size: 0.95rem;
-    }
-
-    .direccion-item p {
-        font-size: 0.85rem;
+    .faq-grid {
+        grid-template-columns: 1fr;
     }
 }

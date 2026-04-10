@@ -113,7 +113,7 @@ if (form) {
 
         try {
             // Enviar a tu servidor local
-            const response = await fetch('http://localhost:3000/api/enviar-contacto', {
+            const response = await fetch('http://localhost/viro/api/enviar-contacto.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

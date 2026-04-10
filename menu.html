@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Nuestros Menús | Catering Viró · Alta cocina para eventos</title>
+    <title>Menús | Catering Viró · Alta cocina para eventos</title>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- CSS exclusivo para menús -->
-    <link rel="stylesheet" href="css/menu-style.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu-styles.css">
+    <link rel="stylesheet" href="css/carrusel.css">
 </head>
 
 <body>
 
-    <!-- ========== HEADER / NAVEGACIÓN ========== -->
+    <!-- ========== HEADER ========== -->
     <header>
         <div class="container">
             <nav class="navbar">
@@ -41,67 +42,137 @@
             </nav>
         </div>
     </header>
+
     <!-- ========== HERO MENÚS ========== -->
     <section class="menu-hero">
         <div class="container">
             <div class="section-subtitle">Propuesta gastronómica</div>
-            <h1>Nuestros Menús</h1>
-            <p>Seleccionamos los mejores ingredientes de temporada para crear experiencias únicas. Elige el formato que
-                mejor se adapta a tu evento.</p>
+            <h1>Nuestra Carta</h1>
+            <p>Producto de calidad, técnica y equilibrio. Una cocina honesta, pensada para disfrutar sin prisas.</p>
         </div>
     </section>
 
+    <!-- ========== FILOSOFÍA (PRODUCTO | TÉCNICA | EXPERIENCIA) ========== -->
+    <section class="filosofia-menus">
+        <div class="container">
+            <div class="filosofia-grid">
+                <div class="filosofia-item">
+                    <span class="filosofia-numero">01</span>
+                    <h3>Producto</h3>
+                    <p>Ingredientes de primera calidad, kilómetro cero y temporada. Seleccionamos cada producto con
+                        mimo.</p>
+                </div>
+                <div class="filosofia-item">
+                    <span class="filosofia-numero">02</span>
+                    <h3>Técnica</h3>
+                    <p>Cocina de autor que reinterpreta la tradición desde una perspectiva actual y creativa.</p>
+                </div>
+                <div class="filosofia-item">
+                    <span class="filosofia-numero">03</span>
+                    <h3>Experiencia</h3>
+                    <p>Diseñamos momentos únicos alrededor de la mesa. Catering pensado para emocionar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CARRUSEL ========== -->
+    <section class="hero-carrusel">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="img/foto_catering24.png" alt="Menú Degustación">
+                <div class="slide-content">
+                    <h2>Menú Degustación</h2>
+                    <p>Un viaje por nuestras especialidades</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="img/catering_vino5.png" alt="Catering Cóctel">
+                <div class="slide-content">
+                    <h2>Catering Cóctel</h2>
+                    <p>Más de 20 propuestas en formato abierto</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="img/foto_catering14.png" alt="Menú Boda">
+                <div class="slide-content">
+                    <h2>Menús Especiales</h2>
+                    <p>Bodas, ejecutivos, infantiles y a medida</p>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="slider-btn prev" aria-label="Anterior"></button>
+            <button class="slider-btn next" aria-label="Siguiente"></button>
+
+            <!-- Indicadores (puntos) -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <!-- ========== MENÚS DEGUSTACIÓN ========== -->
     <div class="container">
-        <!-- ========== MENÚ DEGUSTACIÓN ========== -->
         <div class="menu-categoria">
             <div class="menu-categoria-header">
-                <h3><i class="fas fa-utensils"></i> Menú Degustación · Alta cocina</h3>
-                <span class="menu-precio-base">Desde 75€/pax</span>
+                <div>
+                    <span class="menu-tag">Degustación</span>
+                    <h3><i class="fas fa-utensils"></i> Menú Degustación</h3>
+                </div>
+                <span class="menu-precio-base">75€/pax</span>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Entrantes fríos</div>
-                    <div class="item-desc">Ostras con granizado de cava · Tartar de atún rojo sobre aguacate · Ventresca
-                        de caballa con tomate cherry confitado</div>
+                    <div class="item-nombre">Entrantes</div>
+                    <div class="item-desc">Selección de ibéricos · Tartar de atún rojo · Ventresca de caballa confitada
+                    </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Entrantes calientes</div>
-                    <div class="item-desc">Croquetas de jamón ibérico · Calamares en su tinta con arroz crujiente ·
-                        Ravioli de trufa negra</div>
+                    <div class="item-nombre">Primeros</div>
+                    <div class="item-desc">Croquetas de jamón · Calamares en su tinta · Ravioli de trufa negra</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Plato principal</div>
-                    <div class="item-desc">Suave de merluza con salsa verde · Solomillo de buey al punto con parmentier
-                        de trufa · Opción vegetariana: Terrina de setas y espárragos</div>
+                    <div class="item-nombre">Principales</div>
+                    <div class="item-desc">Merluza en salsa verde · Solomillo de buey · Terrina de setas (vegana)</div>
                 </div>
                 <div class="menu-item">
                     <div class="item-nombre">Postres</div>
-                    <div class="item-desc">Torrija caramelizada con helado de vainilla · Coulant de chocolate con
-                        frambuesas · Selección de quesos artesanos</div>
+                    <div class="item-desc">Torrija caramelizada · Coulant de chocolate · Selección de quesos</div>
                 </div>
             </div>
             <div class="menu-opciones">
-                <span><i class="fas fa-wine-bottle"></i> Maridaje opcional +25€</span>
-                <span><i class="fas fa-leaf"></i> Adaptable a alergias / vegano</span>
+                <span><i class="fas fa-wine-bottle"></i> Maridaje +25€</span>
+                <span><i class="fas fa-leaf"></i> Adaptable a alergias</span>
             </div>
         </div>
+    </div>
 
-        <!-- ========== MENÚ CÓCTEL ========== -->
+    <!-- ========== MENÚ CÓCTEL ========== -->
+    <div class="container">
         <div class="menu-categoria">
             <div class="menu-categoria-header">
-                <h3><i class="fas fa-champagne-glasses"></i> Catering Cóctel · Formato abierto</h3>
-                <span class="menu-precio-base">Desde 45€/pax</span>
+                <div>
+                    <span class="menu-tag">Cóctel</span>
+                    <h3><i class="fas fa-champagne-glasses"></i> Catering Cóctel</h3>
+                </div>
+                <span class="menu-precio-base">45€/pax</span>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
                     <div class="item-nombre">Opciones frías</div>
-                    <div class="item-desc">Sándwich de salmón ahumado · Canapés de foie con cebolla caramelizada ·
-                        Rollitos de vegetales</div>
+                    <div class="item-desc">Sándwich de salmón ahumado · Canapés de foie · Rollitos de vegetales</div>
                 </div>
                 <div class="menu-item">
                     <div class="item-nombre">Opciones calientes</div>
-                    <div class="item-desc">Mini hamburguesas de wagyu · Brochetas de gambas al ajillo · Empanadillas de
-                        carne</div>
+                    <div class="item-desc">Mini hamburguesas de wagyu · Brochetas de gambas · Empanadillas de carne
+                    </div>
                 </div>
                 <div class="menu-item">
                     <div class="item-nombre">Postres mini</div>
@@ -109,55 +180,78 @@
                 </div>
             </div>
             <div class="menu-opciones">
-                <span><i class="fas fa-clock"></i> 2 horas de servicio continuo</span>
+                <span><i class="fas fa-clock"></i> Servicio continuo 2h</span>
                 <span><i class="fas fa-glass-cheers"></i> Coctelería premium +12€</span>
             </div>
         </div>
+    </div>
 
-        <!-- ========== MENÚS ESPECIALES ========== -->
-        <h2>Menús especiales</h2>
+    <!-- ========== MENÚS REGALA (estilo Viro) ========== -->
+    <div class="container">
+        <div class="menu-regala">
+            <div class="menu-regala-icono">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h2>Menús Regala</h2>
+            <h3>Regala gastronomía. Regala experiencia.</h3>
+            <p>Incluye dos consumiciones por persona.<br>
+                Es imprescindible realizar reserva previa indicando el Menú Regala.<br>
+                Disponible únicamente a mesa completa.</p>
+            <a href="contacto.html" class="btn">Regalar experiencia</a>
+        </div>
+    </div>
+
+    <!-- ========== MENÚS ESPECIALES ========== -->
+    <div class="container">
+        <h2 class="section-title">Menús especiales</h2>
         <div class="menus-especiales">
             <div class="especial-card">
-                <i class="fas fa-ring"></i>
+                <div class="especial-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
                 <h3>Menú Boda</h3>
                 <p>Selección de 3 entrantes, plato principal a elegir, tarta nupcial y brindis incluido.</p>
                 <div class="especial-precio">Desde 95€/pax</div>
+                <a href="contacto.html" class="btn-link">Consultar <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="especial-card">
-                <i class="fas fa-briefcase"></i>
+                <div class="especial-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
                 <h3>Menú Ejecutivo</h3>
                 <p>Ideal para reuniones de trabajo. Entrante único, plato principal y café.</p>
                 <div class="especial-precio">Desde 38€/pax</div>
+                <a href="contacto.html" class="btn-link">Consultar <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="especial-card">
-                <i class="fas fa-child"></i>
-                <h3>Menú Infantil</h3>
-                <p>Pensado para los más pequeños: nuggets, pasta, pizza y postre divertido.</p>
-                <div class="especial-precio">Desde 22€/pax</div>
+                <div class="especial-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Menú a Domicilio</h3>
+                <p>Celebra en casa con la máxima calidad. Montaje, servicio y recogida incluidos.</p>
+                <div class="especial-precio">Desde 28€/pax</div>
+                <a href="contacto.html" class="btn-link">Consultar <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
+    </div>
 
-        <!-- ========== MENÚ A DOMICILIO ========== -->
-        <h2>Menús a domicilio</h2>
-        <div class="menu-domicilio">
-            <h3><i class="fas fa-home"></i> Menú Festivo en casa</h3>
-            <p>Selección de 5 entrantes fríos, 3 calientes, plato principal y postre. Incluye vajilla desechable de
-                diseño e instrucciones de montaje.</p>
-            <p><strong>Precio:</strong> 28€/pax (mínimo 6 personas) · Envío gratuito en Madrid capital</p>
-            <a href="#contacto" class="btn">Pedir ahora</a>
-        </div>
-
-        <!-- ========== NOTA IMPORTANTE ========== -->
+    <!-- ========== NOTA ========== -->
+    <div class="container">
         <div class="nota-menus">
-            <i class="fas fa-info-circle"></i> Todos nuestros menús son personalizables. Contáctanos al menos 15 días
-            antes del evento para ajustar cualquier detalle. Consulta disponibilidad de productos de temporada.
+            <i class="fas fa-info-circle"></i>
+            <div>
+                <strong>Una cocina honesta, pensada para disfrutar sin prisas.</strong>
+                <p>Todos nuestros menús son personalizables. Contáctanos con al menos 15 días de antelación.</p>
+            </div>
         </div>
+    </div>
 
-        <!-- ========== CTA CONTACTO ========== -->
+    <!-- ========== CTA ========== -->
+    <div class="container">
         <div class="cta-menus">
-            <h3>¿No encuentras lo que buscas?</h3>
-            <p>Diseñamos un menú a medida para ti. Cuéntanos tu idea y te preparamos una propuesta exclusiva.</p>
-            <a href="index.html#contacto" class="btn">Solicitar menú personalizado</a>
+            <h3>¿Quieres descubrir nuestra carta?</h3>
+            <p>Déjate llevar por la experiencia Viró. Solicita información sin compromiso.</p>
+            <a href="contacto.html" class="btn">Solicitar carta completa</a>
         </div>
     </div>
 
@@ -166,14 +260,18 @@
         <div class="container">
             <div class="footer-logo">Catering Viró</div>
             <div class="footer-social">
-                <a href="https://www.instagram.com/virogastrobar/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/virogastrobar/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
                 <a href="https://www.facebook.com/virogastrobar/?locale=es_ES" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/virogastrobar" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-x-twitter"></i></a>
+                    rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/virogastrobar" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
                 <a href="https://www.tripadvisor.es/Restaurant_Review-g658372-d12846557-Reviews-Viro_Gastrobar-Guijuelo_Province_of_Salamanca_Castile_and_Leon.html"
-                    target="_blank" rel="noopener noreferrer"><i class="fab fa-tripadvisor"></i>
+                    target="_blank" rel="noopener noreferrer">
                     <img src="img/logo.svg" alt="Tripadvisor" class="social-svg">
                 </a>
             </div>
@@ -182,7 +280,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript para menú móvil -->
+    <!-- JavaScript -->
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
@@ -192,6 +290,7 @@
             });
         }
     </script>
+    <script src="js/carrusel.js"></script>
 </body>
 
 </html>

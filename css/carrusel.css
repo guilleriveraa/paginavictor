@@ -1,4 +1,4 @@
-/* ========== CARRUSEL HERO ESTILO VIRO (MÚLTIPLE) ========== */
+/* ========== CARRUSEL HERO ========== */
 .hero-carrusel {
     position: relative;
     width: 100%;
@@ -157,6 +157,7 @@
     margin-top: 2rem;
     text-align: center;
     padding: 1rem 0 3rem;
+    background: #ffffff;
 }
 
 .hero-buttons {

@@ -1,4 +1,5 @@
-/* ========== CASTILLO PUENTE CONGOSTO · ESTILO ESPECÍFICO ========== */
+/* ========== CASTILLO PUENTE CONGOSTO · ESTILO COHERENTE ========== */
+
 .espacio-detalle {
     padding: 4rem 0;
 }
@@ -10,7 +11,7 @@
 
 .espacio-header h1 {
     font-size: 3rem;
-    color: #f5e2c0;
+    color: #1a1a1a;
     margin-bottom: 1rem;
 }
 
@@ -30,25 +31,31 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border: 1px solid rgba(192, 160, 112, 0.3);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s;
+}
+
+.info-principal img:hover {
+    transform: scale(1.02);
 }
 
 .descripcion-larga p {
-    color: #bbbbbb;
+    color: #555555;
     margin-bottom: 1rem;
     line-height: 1.6;
 }
 
 .caracteristicas-detalle {
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     padding: 2rem;
     margin: 2rem 0;
 }
 
 .caracteristicas-detalle h3 {
-    color: #f0debc;
+    color: #1a1a1a;
     margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .caracteristicas-grid {
@@ -61,7 +68,7 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    color: #bbbbbb;
+    color: #555555;
     font-size: 0.9rem;
     padding: 0.5rem;
 }
@@ -69,6 +76,7 @@
 .caracteristicas-grid i {
     color: #c0a070;
     width: 25px;
+    font-size: 1.1rem;
 }
 
 .galeria {
@@ -76,8 +84,9 @@
 }
 
 .galeria h3 {
-    color: #f0debc;
+    color: #1a1a1a;
     margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .galeria-grid {
@@ -90,8 +99,8 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border: 1px solid rgba(192, 160, 112, 0.2);
-    transition: transform 0.3s;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
 }
 
 .galeria-grid img:hover {
@@ -101,13 +110,19 @@
 
 .mapa-espacio {
     margin: 3rem 0;
-    background: #111111;
-    border: 1px solid rgba(192, 160, 112, 0.2);
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
     padding: 2rem;
 }
 
 .mapa-espacio h3 {
-    color: #f0debc;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.mapa-espacio p {
+    color: #555555;
     margin-bottom: 1rem;
 }
 
@@ -128,9 +143,15 @@
     margin-top: 2rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .info-principal {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .info-principal img {
+        height: 250px;
     }
 
     .espacio-header h1 {
@@ -138,6 +159,10 @@
     }
 
     .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .caracteristicas-grid {
         grid-template-columns: 1fr;
     }
 }

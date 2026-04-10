@@ -711,3 +711,101 @@ footer {
 .footer-copy a:hover {
     color: #c0a070;
 } */
+/* ========== LOGO CON IMAGEN ========== */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    max-width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.logo img:hover {
+    opacity: 0.8;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .logo img {
+        height: 40px;
+    }
+}
+
+.logo-texto {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000000;
+    margin-left: 0.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 768px) {
+    .logo-texto {
+        font-size: 1rem;
+    }
+}
+
+/* ========== ICONOS DE REDES SOCIALES ========== */
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #c0a070;
+    transform: translateY(-3px);
+}
+
+.footer-social a:hover i {
+    color: #0a0a0a;
+}
+
+/* Colores específicos al hacer hover (opcional) */
+.footer-social a:hover .fa-instagram {
+    color: #0a0a0a;
+}
+
+.footer-social a:hover .fa-facebook-f {
+    color: #0a0a0a;
+}
+
+.footer-social a:hover .fa-x-twitter {
+    color: #0a0a0a;
+}
+
+.footer-social a:hover .fa-tripadvisor {
+    color: #0a0a0a;
+}
+
+.footer-social .social-svg {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Color normal (gris claro) */
+.footer-social .social-svg {
+    filter: invert(80%);
+}
+
+/* Al hacer hover: dorado */
+.footer-social a:hover .social-svg {
+    filter: invert(67%) sepia(37%) saturate(749%) hue-rotate(354deg) brightness(92%) contrast(89%);
+    transform: translateY(-3px);
+}

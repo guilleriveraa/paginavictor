@@ -152,7 +152,7 @@ app.post('/api/enviar-contacto', async (req, res) => {
                         </div>
                         
                         <div class="footer">
-                            <p>Mensaje enviado desde el formulario de contacto de TuNombreCatering</p>
+                            <p>Mensaje enviado desde el formulario de contacto de Catering Viró</p>
                         </div>
                     </div>
                 </body>
@@ -164,7 +164,7 @@ app.post('/api/enviar-contacto', async (req, res) => {
         await resend.emails.send({
             from: 'TuCatering <onboarding@resend.dev>',
             to: [email],
-            subject: '✅ Hemos recibido tu mensaje - TuNombreCatering',
+            subject: '✅ Hemos recibido tu mensaje - Catering Viró',
             html: `
                 <!DOCTYPE html>
                 <html>
@@ -184,9 +184,9 @@ app.post('/api/enviar-contacto', async (req, res) => {
                         <p>Nos pondremos en contacto contigo en menos de 24 horas.</p>
                         <br>
                         <p>Saludos cordiales,<br>
-                        <strong>TuNombreCatering</strong></p>
+                        <strong>Catering Viró</strong></p>
                         <div class="footer">
-                            <p>📞 +34 123 456 789 | 📧 hola@tunombrecatering.com</p>
+                            <p>📞 923 58 04 31 | 📧 virogastrobar@gmail.com</p>
                         </div>
                     </div>
                 </body>

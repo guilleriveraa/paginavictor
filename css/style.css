@@ -725,3 +725,255 @@ footer {
         height: 220px;
     }
 }
+
+.espacio-item .capacidad {
+    display: inline-block;
+    background: rgba(192, 160, 112, 0.15);
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    color: #c0a070;
+    margin: 0.5rem 0;
+}
+
+.espacio-item .btn-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #c0a070;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ========== TESTIMONIOS MEJORADOS ========== */
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.testimonio-card {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-5px);
+    border-color: #c0a070;
+}
+
+.testimonio-card i.fa-quote-left {
+    color: #c0a070;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.testimonio-card p {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.testimonio-card span {
+    display: block;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.testimonio-rating {
+    margin-top: 0.8rem;
+}
+
+.testimonio-rating i {
+    color: #c0a070;
+    font-size: 0.8rem;
+    margin-right: 2px;
+}
+
+.testimonios-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.testimonio-valoracion {
+    text-align: center;
+}
+
+.valoracion-numero {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #c0a070;
+    font-family: 'Playfair Display', serif;
+}
+
+.valoracion-estrellas i {
+    color: #c0a070;
+    font-size: 0.9rem;
+}
+
+.testimonio-valoracion p {
+    font-size: 0.7rem;
+    color: #777777;
+    margin-top: 0.3rem;
+}
+
+.testimonio-enlace a {
+    color: #c0a070;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.testimonio-enlace a:hover {
+    color: #a08050;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonios-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ========== FAQ MEJORADO ========== */
+.faq {
+    margin: 4rem 0;
+}
+
+.faq h2 {
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.faq-item {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    border-color: #c0a070;
+}
+
+.faq-item h4 {
+    color: #c0a070;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: #555555;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .faq-item {
+        padding: 1.2rem;
+    }
+}
+
+/* ========== CLIENTES DESTACADOS ========== */
+.clientes-destacados {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-left: 3px solid #c0a070;
+}
+
+.clientes-destacados p {
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.clientes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.clientes-lista span {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    color: #555555;
+    transition: all 0.3s;
+}
+
+.clientes-lista span:hover {
+    border-color: #c0a070;
+    color: #c0a070;
+}
+
+/* ========== EQUIPO MEJORADO ========== */
+.equipo-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.equipo-mini span {
+    font-weight: 400;
+    color: #1a1a1a;
+    padding: 0.5rem;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.equipo-mini span:last-child {
+    border-bottom: none;
+}
+
+.equipo-mini strong {
+    color: #c0a070;
+}
+
+@media (max-width: 768px) {
+    .clientes-lista {
+        gap: 0.5rem;
+    }
+
+    .clientes-lista span {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.8rem;
+    }
+}

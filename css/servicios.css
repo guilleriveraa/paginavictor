@@ -308,3 +308,51 @@
         gap: 1.5rem;
     }
 }
+
+/* ========== CLIENTES ========== */
+.clientes {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+}
+
+.clientes h2 {
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.clientes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cliente-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: all 0.3s;
+}
+
+.cliente-item:hover {
+    border-color: #c0a070;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .clientes-grid {
+        gap: 1rem;
+    }
+
+    .cliente-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}

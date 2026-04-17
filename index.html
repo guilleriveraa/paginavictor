@@ -18,7 +18,7 @@
 
 <body>
 
-    <!-- ========== HEADER / NAVEGACIÓN ========== -->
+    <!-- ========== HEADER ========== -->
     <header>
         <div class="container">
             <nav class="navbar">
@@ -41,28 +41,24 @@
             </nav>
         </div>
     </header>
-    <!-- ========== CARRUSEL HERO CON AUTO-REPRODUCCIÓN ========== -->
+
+    <!-- ========== CARRUSEL 1: BIENVENIDA / HERO ========== -->
     <section class="hero-carrusel">
         <div class="slider-container">
-            <!-- Slide 1 -->
             <div class="slide active">
                 <img src="img/foto_catering8.png" alt="Catering para eventos">
                 <div class="slide-content">
-                    <h2>Gastronomía que transforma momentos</h2>
-                    <p>Más de 20 años creando experiencias únicas</p>
+                    <h2>Catering Viró</h2>
+                    <p>Más de 20 años creando experiencias gastronómicas únicas</p>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
             <div class="slide">
                 <img src="img/foto_manga_viro.png" alt="Cocina de autor">
                 <div class="slide-content">
                     <h2>Cocina de autor</h2>
-                    <p>Ingredientes de temporada y un equipo apasionado</p>
+                    <p>Producto de calidad, técnica y equilibrio</p>
                 </div>
             </div>
-
-            <!-- Slide 3 -->
             <div class="slide">
                 <img src="img/foto_evento22.png" alt="Eventos exclusivos">
                 <div class="slide-content">
@@ -70,12 +66,8 @@
                     <p>Bodas, corporativos, fiestas privadas</p>
                 </div>
             </div>
-
-            <!-- Botones de navegación -->
             <button class="slider-btn prev" aria-label="Anterior"></button>
             <button class="slider-btn next" aria-label="Siguiente"></button>
-
-            <!-- Indicadores (puntos) -->
             <div class="slider-dots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
@@ -84,35 +76,40 @@
         </div>
     </section>
 
-    <!-- Botones de acción debajo del carrusel -->
+    <!-- Botones de acción -->
     <div class="hero-buttons-container">
         <div class="container">
             <div class="hero-buttons">
                 <a href="contacto.html" class="btn">Solicitar presupuesto</a>
-
+                <button onclick="window.location.href='https://virogastrobar.tucartadigital.com/';"
+                    class="btn btn-outline" style="cursor: pointer;">Descubrir menús</button>
             </div>
         </div>
     </div>
-    <!-- ========== PROPUESTA DE VALOR (TRÍPTICO) ========== -->
+
+    <!-- ========== PROPUESTA DE VALOR ========== -->
     <section class="valores">
         <div class="container">
             <div class="section-subtitle">Nuestra esencia</div>
             <h2>Más que un catering,<br>una filosofía</h2>
             <div class="valores-grid">
                 <div class="valor-item">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Producto de calidad</h3>
-                    <p>Ingredientes frescos, de kilómetro cero y temporada. Selección cuidada al detalle.</p>
+                    <i class="fas fa-seedling"></i>
+                    <h3>Producto</h3>
+                    <p>Ingredientes de primera calidad, kilómetro cero y temporada. El ibérico y la calidad son
+                        protagonistas.</p>
                 </div>
                 <div class="valor-item">
-                    <i class="fas fa-heart"></i>
-                    <h3>Pasión y creatividad</h3>
-                    <p>Un equipo de cocina apasionado que reinterpreta la tradición con un toque contemporáneo.</p>
+                    <i class="fas fa-fire"></i>
+                    <h3>Técnica</h3>
+                    <p>Cocina de autor que reinterpreta la tradición desde una perspectiva actual. Sin artificios, pero
+                        con mucho carácter.</p>
                 </div>
                 <div class="valor-item">
-                    <i class="fas fa-calendar-check"></i>
-                    <h3>Atención personalizada</h3>
-                    <p>Escuchamos tus ideas y las convertimos en una experiencia gastronómica a tu medida.</p>
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Experiencia</h3>
+                    <p>Diseñamos momentos únicos alrededor de la mesa. Para disfrutar sin prisas y crear recuerdos
+                        inolvidables.</p>
                 </div>
             </div>
         </div>
@@ -127,68 +124,60 @@
                 <div class="evento-card">
                     <i class="fas fa-ring"></i>
                     <h3>Bodas</h3>
-                    <p>El día más importante merece una propuesta gastronómica inolvidable, con menús personalizados y
-                        presentación de ensueño.</p>
-                    <a href="espacios.html" class="card-link">Descubrir <i class="fas fa-arrow-right"></i></a>
+                    <p>El día más importante merece una propuesta gastronómica inolvidable. Disponemos de fincas
+                        exclusivas como Las Ahijaderas.</p>
+                    <a href="espacios.html" class="card-link">Descubrir espacios <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="evento-card">
                     <i class="fas fa-briefcase"></i>
                     <h3>Eventos corporativos</h3>
-                    <p>Congresos, cenas de empresa, coffee breaks… Imagen, puntualidad y excelencia para tu marca.</p>
-                    <a href="espacios.html" class="card-link">Descubrir <i class="fas fa-arrow-right"></i></a>
+                    <p>Congresos, cenas de empresa, coffee breaks. Clientes como FISAN, Aljomar y Diputación de
+                        Salamanca confían en nosotros.</p>
+                    <a href="servicios.html" class="card-link">Más información <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="evento-card">
-                    <i class="fas fa-home"></i>
-                    <h3>A domicilio</h3>
-                    <p>Celebra en casa con la máxima calidad. Te llevamos la experiencia de nuestro restaurante a tu
-                        comedor.</p>
-                    <a href="espacios.html" class="card-link">Descubrir <i class="fas fa-arrow-right"></i></a>
+                    <i class="fas fa-fire"></i>
+                    <h3>Chef privado</h3>
+                    <p>Chef privado (Pablo García) y cortador de jamón profesional (Andrés Rodríguez). Showcooking en
+                        vivo para sorprender a tus invitados.</p>
+                    <a href="servicios.html" class="card-link">Más información <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="evento-card">
-                    <i class="fas fa-champagne-glasses"></i>
-                    <h3>Cócteles & show cooking</h3>
-                    <p>Estaciones interactivas, coctelería de autor y propuestas temáticas para sorprender a tus
-                        invitados.</p>
-                    <a href="espacios.html" class="card-link">Descubrir <i class="fas fa-arrow-right"></i></a>
+                    <i class="fas fa-gift"></i>
+                    <h3>Menús Regala</h3>
+                    <p>Regala gastronomía. Regala experiencia. Tarjetas regalo con dos consumiciones por persona.</p>
+                    <a href="menu.html" class="card-link">Descubrir menús <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ========== CARRUSEL 2: MENÚS DESTACADOS ========== -->
     <section class="hero-carrusel">
         <div class="slider-container">
-            <!-- Slide 1 -->
             <div class="slide active">
-                <img src="img/foto_catering.png" alt="Catering para eventos">
+                <img src="img/foto_catering.png" alt="Menú Degustación">
                 <div class="slide-content">
-                    <h2>Gastronomía que transforma momentos</h2>
-                    <p>Más de 20 años creando experiencias únicas</p>
+                    <h2>Menú Degustación</h2>
+                    <p>Un viaje por nuestras especialidades</p>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
             <div class="slide">
-                <img src="img/foto_catering26.png" alt="Cocina de autor">
+                <img src="img/foto_catering26.png" alt="Catering Cóctel">
                 <div class="slide-content">
-                    <h2>Cocina de autor</h2>
-                    <p>Ingredientes de temporada y un equipo apasionado</p>
+                    <h2>Catering Cóctel</h2>
+                    <p>Más de 20 propuestas en formato abierto</p>
                 </div>
             </div>
-
-            <!-- Slide 3 -->
             <div class="slide">
-                <img src="img/catering_vino3.png" alt="Eventos exclusivos">
+                <img src="img/catering_vino3.png" alt="Menú Ejecutivo">
                 <div class="slide-content">
-                    <h2>Eventos exclusivos</h2>
-                    <p>Bodas, corporativos, fiestas privadas</p>
+                    <h2>Menú Ejecutivo</h2>
+                    <p>19,50€ · De martes a viernes</p>
                 </div>
             </div>
-
-            <!-- Botones de navegación -->
             <button class="slider-btn prev" aria-label="Anterior"></button>
             <button class="slider-btn next" aria-label="Siguiente"></button>
-
-            <!-- Indicadores (puntos) -->
             <div class="slider-dots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
@@ -196,7 +185,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- ========== MENÚS DESTACADOS ========== -->
     <section id="menus" class="menus">
@@ -213,7 +201,7 @@
                 <div class="menu-card">
                     <div class="menu-img">🥂</div>
                     <h3>Catering Cóctel</h3>
-                    <p>Más de 20 propuestas en formato abierto. Perfecto para networking y celebraciones dinámicas.</p>
+                    <p>Más de 20 propuestas en formato abierto. Perfecto para networking.</p>
                     <span class="menu-price">Desde 45€/pax</span>
                 </div>
                 <div class="menu-card">
@@ -225,47 +213,37 @@
             </div>
             <div class="menus-cta">
                 <button onclick="window.location.href='https://virogastrobar.tucartadigital.com/';"
-                    style="background: transparent; border: 1.5px solid #c0a070; color: #c0a070; padding: 12px 32px; border-radius: 0; font-weight: 500; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; font-family: 'Inter', sans-serif; position: relative; z-index: 9999;">
-                    Descubrir menús
-                </button>
+                    class="btn btn-outline" style="cursor: pointer;">Descubrir menús</button>
             </div>
         </div>
     </section>
 
+    <!-- ========== CARRUSEL 3: ESPACIOS EXCLUSIVOS ========== -->
     <section class="hero-carrusel">
         <div class="slider-container">
-            <!-- Slide 1 -->
             <div class="slide active">
-                <img src="img/palacio_de_congresos.png" alt="Catering para eventos">
+                <img src="img/palacio_de_congresos.png" alt="Palacio de Congresos">
                 <div class="slide-content">
                     <h2>Palacio de Congresos</h2>
-                    <p>Más de 20 años creando experiencias únicas</p>
+                    <p>Hasta 500 invitados · En el corazón de Salamanca</p>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
             <div class="slide">
-                <img src="img/Puente-Congosto-18.png" alt="Cocina de autor">
+                <img src="img/Puente-Congosto-18.png" alt="Castillo de Puente Congosto">
                 <div class="slide-content">
-                    <h2>Castillo de Puente del Congosto</h2>
-                    <p>Ingredientes de temporada y un equipo apasionado</p>
+                    <h2>Castillo de Puente Congosto</h2>
+                    <p>Castillo medieval del siglo XII · Vistas al río Tormes</p>
                 </div>
             </div>
-
-            <!-- Slide 3 -->
             <div class="slide">
-                <img src="img/vista-de-la-finca-las-ahijaderas.png" alt="Eventos exclusivos">
+                <img src="img/vista-de-la-finca-las-ahijaderas.png" alt="Finca Las Ahijaderas">
                 <div class="slide-content">
                     <h2>Finca Las Ahijaderas</h2>
-                    <p>Bodas, corporativos, fiestas privadas</p>
+                    <p>Finca rústica · Capilla propia · Piscina</p>
                 </div>
             </div>
-
-            <!-- Botones de navegación -->
             <button class="slider-btn prev" aria-label="Anterior"></button>
             <button class="slider-btn next" aria-label="Siguiente"></button>
-
-            <!-- Indicadores (puntos) -->
             <div class="slider-dots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
@@ -274,66 +252,62 @@
         </div>
     </section>
 
-
-    <!-- ========== ESPACIOS / FINCAS PROPIAS ========== -->
+    <!-- ========== ESPACIOS ========== -->
     <section id="espacios" class="espacios">
         <div class="container">
             <div class="section-subtitle">Escenarios únicos</div>
             <h2>Espacios exclusivos para tu evento</h2>
             <div class="espacios-grid">
                 <div class="espacio-item">
+                    <div class="espacio-placeholder">🏰</div>
+                    <h3>Castillo de Puente Congosto</h3>
+                    <p>Castillo medieval del siglo XII restaurado, con vistas al río Tormes. Capacidad hasta 200
+                        invitados.</p>
+                </div>
+                <div class="espacio-item">
                     <div class="espacio-placeholder">🌳</div>
-                    <h3>Finca Optimist</h3>
-                    <p>Rodeada de naturaleza, ideal para bodas románticas y retiros corporativos.</p>
+                    <h3>Finca Las Ahijaderas</h3>
+                    <p>Finca rústica rodeada de naturaleza, con amplios jardines, piscina y capilla propia. Capacidad
+                        hasta 300 invitados.</p>
                 </div>
                 <div class="espacio-item">
                     <div class="espacio-placeholder">🏛️</div>
-                    <h3>Palacio Cibeles</h3>
-                    <p>Elegancia y majestuosidad en el centro de la ciudad. Capacidad hasta 300 invitados.</p>
+                    <h3>Palacio de Congresos</h3>
+                    <p>Espacio moderno y versátil en el corazón de Salamanca. Capacidad hasta 500 invitados.</p>
                 </div>
-                <div class="espacio-item">
-                    <div class="espacio-placeholder">🌿</div>
-                    <h3>Sala 18 · Invernadero</h3>
-                    <p>Un espacio flexible, luminoso y con identidad propia. Ideal para eventos de diseño.</p>
-                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="espacios.html" class="btn">Descubrir todos los espacios</a>
             </div>
         </div>
     </section>
 
+    <!-- ========== CARRUSEL 4: EQUIPO Y SERVICIOS ========== -->
     <section class="hero-carrusel">
         <div class="slider-container">
-            <!-- Slide 1 -->
             <div class="slide active">
-                <img src="img/foto_catering16.png" alt="Catering para eventos">
+                <img src="img/foto_catering16.png" alt="Chef Pablo García">
                 <div class="slide-content">
-                    <h2>Palacio de Congresos</h2>
-                    <p>Más de 20 años creando experiencias únicas</p>
+                    <h2>Chef Pablo García</h2>
+                    <p>Más de 20 años de experiencia</p>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
             <div class="slide">
-                <img src="img/foto_todo_personal.png" alt="Cocina de autor">
+                <img src="img/foto_todo_personal.png" alt="Cortador de jamón profesional">
                 <div class="slide-content">
-                    <h2>Castillo de Puente del Congosto</h2>
-                    <p>Ingredientes de temporada y un equipo apasionado</p>
+                    <h2>Andrés Rodríguez</h2>
+                    <p>Cortador de jamón profesional</p>
                 </div>
             </div>
-
-            <!-- Slide 3 -->
             <div class="slide">
-                <img src="img/foto_personal18.png" alt="Eventos exclusivos">
+                <img src="img/foto_personal18.png" alt="Equipo Viró">
                 <div class="slide-content">
-                    <h2>Finca Las Ahijaderas</h2>
-                    <p>Bodas, corporativos, fiestas privadas</p>
+                    <h2>Equipo Viró</h2>
+                    <p>Pasión y dedicación en cada evento</p>
                 </div>
             </div>
-
-            <!-- Botones de navegación -->
             <button class="slider-btn prev" aria-label="Anterior"></button>
             <button class="slider-btn next" aria-label="Siguiente"></button>
-
-            <!-- Indicadores (puntos) -->
             <div class="slider-dots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
@@ -342,33 +316,41 @@
         </div>
     </section>
 
-    <!-- ========== SOBRE NOSOTROS / FILOSOFÍA + EQUIPO ========== -->
+    <!-- ========== SOBRE NOSOTROS ========== -->
     <section id="nosotros" class="nosotros">
         <div class="container">
             <div class="nosotros-grid">
                 <div class="nosotros-texto">
                     <div class="section-subtitle">Quiénes somos</div>
-                    <h2>Una familia apasionada por la gastronomía</h2>
+                    <h2>Pasión por la gastronomía desde 2005</h2>
                     <p>Somos un equipo de cocineros, creativos y organizadores con más de 20 años de experiencia. Para
                         nosotros, cada evento es único: lo mimamos, lo diseñamos y lo ejecutamos como si fuera el
-                        nuestro. Porque no solo servimos comida, creamos recuerdos.</p>
-                    <p><strong>Filosofía:</strong> producto excelente, servicio impecable y atención al detalle. Ese es
-                        nuestro sello.</p>
+                        nuestro.</p>
+                    <p><strong>Filosofía:</strong> PRODUCTO | TÉCNICA | EXPERIENCIA. Producto excelente, servicio
+                        impecable y atención al detalle.</p>
+                    <div class="clientes-destacados">
+                        <p><strong>Clientes que confían en nosotros:</strong></p>
+                        <div class="clientes-lista">
+                            <span>FISAN (Ibéricos)</span>
+                            <span>Aljomar</span>
+                            <span>Naturiber</span>
+                            <span>Diputación de Salamanca</span>
+                        </div>
+                    </div>
                     <a href="contacto.html" class="btn">Conócenos</a>
                 </div>
                 <div class="nosotros-equipo">
                     <h3>Nuestro equipo</h3>
                     <div class="equipo-mini">
-                        <span>👩‍🍳 Mila · Chef ejecutiva</span>
-                        <span>👨‍🍳 Ramón · Director</span>
-                        <span>👩‍💼 María · Wedding planner</span>
-                        <span>👨‍💼 Juan · Operaciones</span>
+                        <span>👨‍🍳 <strong>Pablo García</strong> · Chef ejecutivo</span>
+                        <span>🔪 <strong>Andrés Rodríguez</strong> · Cortador de jamón profesional</span>
+                        <span>👨‍💼 <strong>Victor Rodriguez</strong> · Director</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    </div>
+
     <!-- ========== TESTIMONIOS ========== -->
     <section class="testimonios">
         <div class="container">
@@ -377,15 +359,49 @@
             <div class="testimonios-grid">
                 <div class="testimonio-card">
                     <i class="fas fa-quote-left"></i>
-                    <p>"El catering de Catering Viró hizo de nuestra boda un sueño. La comida espectacular y el
-                        equipo súper atento. Repetiremos sin duda."</p>
-                    <span>— Laura & Carlos</span>
+                    <p>"Todo muy bueno, buen trato del servicio y rapidez. Déjate guiar por el servicio y
+                        recomendaciones. Limpieza y cuidado en la decoración."</p>
+                    <span>— Mónica Baena Martin</span>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
                 </div>
                 <div class="testimonio-card">
                     <i class="fas fa-quote-left"></i>
-                    <p>"Contratamos el servicio para un congreso y fue un acierto total. Puntualidad, calidad y una
-                        presentación impecable. Muy profesionales."</p>
-                    <span>— Marketing Tech Summit</span>
+                    <p>"Excelente materia prima. El jamón ibérico 'Cinco Rosas', un manjar. La pluma ibérica
+                        espectacular. El brioche de chipirones, muy logrado."</p>
+                    <span>— Jorge Bermejo</span>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"El servicio espectacular, la comida muy rica. Nos encantaron las Gildas, el brioche y los
+                        postres caseros. Para repetir."</p>
+                    <span>— Forevernat</span>
+                    <div class="testimonio-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonios-footer">
+                <div class="testimonio-valoracion">
+                    <div class="valoracion-numero">8.7</div>
+                    <div class="valoracion-estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Puntuación media en Gastroranking</p>
+                </div>
+                <div class="testimonio-enlace">
+                    <a href="https://www.tripadvisor.es/Restaurant_Review-g658372-d12846557-Reviews-Viro_Gastrobar-Guijuelo_Province_of_Salamanca_Castile_and_Leon.html"
+                        target="_blank" rel="noopener noreferrer">
+                        Ver más opiniones en Tripadvisor <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -404,24 +420,25 @@
                     <a href="https://x.com/virogastrobar" target="_blank" rel="noopener noreferrer"><i
                             class="fab fa-x-twitter"></i></a>
                     <a href="https://www.tripadvisor.es/Restaurant_Review-g658372-d12846557-Reviews-Viro_Gastrobar-Guijuelo_Province_of_Salamanca_Castile_and_Leon.html"
-                        target="_blank" rel="noopener noreferrer"><i class="fab fa-tripadvisor"></i>
+                        target="_blank" rel="noopener noreferrer">
                         <img src="img/logo.svg" alt="Tripadvisor" class="social-svg">
                     </a>
                 </div>
                 <p class="footer-copy">© 2026 Catering Viró · Gastronomía para eventos · <a
-                        href="aviso-legal.html">Aviso legal</a>
-                    | <a href="cookies.html">Política de cookies</a></p>
+                        href="aviso-legal.html">Aviso legal</a> | <a href="cookies.html">Política de cookies</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript para menú móvil -->
+    <!-- JavaScript -->
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
     </script>
     <script src="js/carrusel.js"></script>
 </body>

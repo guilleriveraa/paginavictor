@@ -32,13 +32,16 @@ h3,
 
 h1 {
     font-size: 3rem;
+    font-weight: 600;
     color: #1a1a1a;
+    letter-spacing: -0.02em;
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #1a1a1a;
+    border-left: 3px solid #c0a070;
     padding-left: 1rem;
 }
 
@@ -188,10 +191,12 @@ header {
 
 .logo-texto {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
+    font-style: italic;
     color: #ffffff;
     margin-left: 0.8rem;
     font-family: 'Playfair Display', serif;
+    letter-spacing: -0.02em;
 }
 
 @media (max-width: 768px) {
@@ -1063,4 +1068,111 @@ footer {
     font-size: 0.8rem;
     margin-top: 5px;
     color: #ccc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-price,
+.especial-precio,
+.precio-servicio {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #c0a070;
+    background: rgba(192, 160, 112, 0.1);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* ========== BOTÓN FLOTANTE DE WHATSAPP ========== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Tooltip (texto que aparece al pasar el ratón) */
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-tooltip {
+        display: none;
+        /* Ocultar tooltip en móviles */
+    }
+}
+
+/* Animación de latido */
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Estilo para la filosofía (como en Viró) */
+.filosofia-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #1a1a1a;
 }

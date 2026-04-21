@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Menús | Catering Viró · Alta cocina para eventos</title>
+    <title data-i18n="menu_hero_title">Menús | Catering Viró · Alta cocina para eventos</title>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
@@ -25,17 +25,22 @@
             <nav class="navbar">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/viro.png" alt="Catering Viró - Logo">
+                        <img src="img/logoviro.png" alt="Catering Viró - Logo">
                         <span class="logo-texto">Catering Viró</span>
                     </a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="menu.html">Menús</a></li>
-                    <li><a href="espacios.html">Espacios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                    <li><a href="servicios.html" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="menu.html" data-i18n="nav_menus">Menús</a></li>
+                    <li><a href="espacios.html" data-i18n="nav_espacios">Espacios</a></li>
+                    <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
                 </ul>
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -46,9 +51,10 @@
     <!-- ========== HERO MENÚS ========== -->
     <section class="menu-hero">
         <div class="container">
-            <div class="section-subtitle">Propuesta gastronómica</div>
-            <h1>Nuestra Carta</h1>
-            <p>Producto de calidad, técnica y equilibrio. Una cocina honesta, pensada para disfrutar sin prisas.</p>
+            <div class="section-subtitle" data-i18n="menu_hero_subtitle">Propuesta gastronómica</div>
+            <h1 data-i18n="menu_hero_title">Nuestra Carta</h1>
+            <p data-i18n="menu_hero_text">Producto de calidad, técnica y equilibrio. Una cocina honesta, pensada para
+                disfrutar sin prisas.</p>
         </div>
     </section>
 
@@ -58,19 +64,21 @@
             <div class="filosofia-grid">
                 <div class="filosofia-item">
                     <span class="filosofia-numero">01</span>
-                    <h3>Producto</h3>
-                    <p>Ingredientes de primera calidad, kilómetro cero y temporada. Seleccionamos cada producto con
-                        mimo.</p>
+                    <h3 data-i18n="menu_filosofia_producto">Producto</h3>
+                    <p data-i18n="menu_filosofia_producto_desc">Ingredientes de primera calidad, kilómetro cero y
+                        temporada. Seleccionamos cada producto con mimo.</p>
                 </div>
                 <div class="filosofia-item">
                     <span class="filosofia-numero">02</span>
-                    <h3>Técnica</h3>
-                    <p>Cocina de autor que reinterpreta la tradición desde una perspectiva actual y creativa.</p>
+                    <h3 data-i18n="menu_filosofia_tecnica">Técnica</h3>
+                    <p data-i18n="menu_filosofia_tecnica_desc">Cocina de autor que reinterpreta la tradición desde una
+                        perspectiva actual y creativa.</p>
                 </div>
                 <div class="filosofia-item">
                     <span class="filosofia-numero">03</span>
-                    <h3>Experiencia</h3>
-                    <p>Diseñamos momentos únicos alrededor de la mesa. Catering pensado para emocionar.</p>
+                    <h3 data-i18n="menu_filosofia_experiencia">Experiencia</h3>
+                    <p data-i18n="menu_filosofia_experiencia_desc">Diseñamos momentos únicos alrededor de la mesa.
+                        Catering pensado para emocionar.</p>
                 </div>
             </div>
         </div>
@@ -82,22 +90,22 @@
             <div class="slide active">
                 <img src="img/foto_catering24.png" alt="Menú Degustación">
                 <div class="slide-content">
-                    <h2>Menú Degustación</h2>
-                    <p>Un viaje por nuestras especialidades</p>
+                    <h2 data-i18n="menu_carrusel_degustacion">Menú Degustación</h2>
+                    <p data-i18n="menu_carrusel_degustacion_desc">Un viaje por nuestras especialidades</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="img/catering_vino5.png" alt="Catering Cóctel">
                 <div class="slide-content">
-                    <h2>Catering Cóctel</h2>
-                    <p>Más de 20 propuestas en formato abierto</p>
+                    <h2 data-i18n="menu_carrusel_coctel">Catering Cóctel</h2>
+                    <p data-i18n="menu_carrusel_coctel_desc">Más de 20 propuestas en formato abierto</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="img/foto_catering14.png" alt="Menú Boda">
                 <div class="slide-content">
-                    <h2>Menús Especiales</h2>
-                    <p>Bodas, ejecutivos, infantiles y a medida</p>
+                    <h2 data-i18n="menu_carrusel_especiales">Menús Especiales</h2>
+                    <p data-i18n="menu_carrusel_especiales_desc">Bodas, ejecutivos, infantiles y a medida</p>
                 </div>
             </div>
             <button class="slider-btn prev" aria-label="Anterior"></button>
@@ -115,29 +123,32 @@
         <div class="menu-categoria">
             <div class="menu-categoria-header">
                 <div>
-                    <span class="menu-tag">De martes a viernes</span>
-                    <h3><i class="fas fa-briefcase"></i> Menú Ejecutivo</h3>
+                    <span class="menu-tag" data-i18n="menu_ejecutivo_tag">De martes a viernes</span>
+                    <h3><i class="fas fa-briefcase"></i> <span data-i18n="menu_ejecutivo_title">Menú Ejecutivo</span>
+                    </h3>
                 </div>
-                <span class="menu-precio-base">19,50€/pax</span>
+                <span class="menu-precio-base" data-i18n="menu_ejecutivo_price">19,50€/pax</span>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Primera experiencia (a elegir uno)</div>
-                    <div class="item-desc">Stortarelli a la amatriciana · Morcilla de Wagyu con queso de cabra · Crema
-                        de espárragos de Navarra</div>
+                    <div class="item-nombre" data-i18n="menu_ejecutivo_first">Primera experiencia (a elegir uno)</div>
+                    <div class="item-desc" data-i18n="menu_ejecutivo_first_desc">Stortarelli a la amatriciana · Morcilla
+                        de Wagyu con queso de cabra · Crema de espárragos de Navarra</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Segunda experiencia (a elegir uno)</div>
-                    <div class="item-desc">Abanico con papas arrugas y mojo picón · Lubina asada con pesto · Pollo
-                        Panko con salsa tonkatsu</div>
+                    <div class="item-nombre" data-i18n="menu_ejecutivo_second">Segunda experiencia (a elegir uno)</div>
+                    <div class="item-desc" data-i18n="menu_ejecutivo_second_desc">Abanico con papas arrugas y mojo picón
+                        · Lubina asada con pesto · Pollo Panko con salsa tonkatsu</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Momento dulce (a elegir uno)</div>
-                    <div class="item-desc">Petit Suis de fresa · Brownie de Conguitos · Café o infusión</div>
+                    <div class="item-nombre" data-i18n="menu_ejecutivo_dessert">Momento dulce (a elegir uno)</div>
+                    <div class="item-desc" data-i18n="menu_ejecutivo_dessert_desc">Petit Suis de fresa · Brownie de
+                        Conguitos · Café o infusión</div>
                 </div>
             </div>
             <div class="menu-opciones">
-                <span><i class="fas fa-wine-bottle"></i> Incluye agua mineral y pan</span>
+                <span><i class="fas fa-wine-bottle"></i> <span data-i18n="menu_ejecutivo_includes">Incluye agua mineral
+                        y pan</span></span>
             </div>
         </div>
     </div>
@@ -147,58 +158,63 @@
         <div class="menu-categoria">
             <div class="menu-categoria-header">
                 <div>
-                    <span class="menu-tag">Para compartir</span>
-                    <h3><i class="fas fa-users"></i> Para compartir</h3>
+                    <span class="menu-tag" data-i18n="menu_compartir_tag">Para compartir</span>
+                    <h3><i class="fas fa-users"></i> <span data-i18n="menu_compartir_title">Para compartir</span></h3>
                 </div>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Patatas Bravas Viró</div>
-                    <div class="item-desc">Nuestra versión de las clásicas bravas</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_patatas">Patatas Bravas Viró</div>
+                    <div class="item-desc" data-i18n="menu_compartir_patatas_desc">Nuestra versión de las clásicas
+                        bravas</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Croquetas de jamón ibérico</div>
-                    <div class="item-desc">Muy cremosas, elaboradas con jamón de bellota</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_croquetas_jamon">Croquetas de jamón ibérico</div>
+                    <div class="item-desc" data-i18n="menu_compartir_croquetas_jamon_desc">Muy cremosas, elaboradas con
+                        jamón de bellota</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Croquetas de setas</div>
-                    <div class="item-desc">Con velo de papada y mousse de foie</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_croquetas_setas">Croquetas de setas</div>
+                    <div class="item-desc" data-i18n="menu_compartir_croquetas_setas_desc">Con velo de papada y mousse
+                        de foie</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">⭐ Brioche de carpaccio de presa ibérica</div>
-                    <div class="item-desc">Con burrata al pesto - Ganador V Concurso "Saborea Guijuelo"</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_brioche">⭐ Brioche de carpaccio de presa ibérica
+                    </div>
+                    <div class="item-desc" data-i18n="menu_compartir_brioche_desc">Con burrata al pesto - Ganador V
+                        Concurso "Saborea Guijuelo"</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Jeta asada</div>
-                    <div class="item-desc">Careta de cerdo a baja temperatura</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_jeta">Jeta asada</div>
+                    <div class="item-desc" data-i18n="menu_compartir_jeta_desc">Careta de cerdo a baja temperatura</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Ensaladilla rusa</div>
-                    <div class="item-desc">Con ventresca de atún</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_ensaladilla">Ensaladilla rusa</div>
+                    <div class="item-desc" data-i18n="menu_compartir_ensaladilla_desc">Con ventresca de atún</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Morcilla de Wagyu</div>
-                    <div class="item-desc">Una de nuestras especialidades</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_morcilla">Morcilla de Wagyu</div>
+                    <div class="item-desc" data-i18n="menu_compartir_morcilla_desc">Una de nuestras especialidades</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Callos de ternera</div>
-                    <div class="item-desc">Receta tradicional</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_callos">Callos de ternera</div>
+                    <div class="item-desc" data-i18n="menu_compartir_callos_desc">Receta tradicional</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Risotto de setas</div>
-                    <div class="item-desc">Con trufa y crujiente de queso</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_risotto">Risotto de setas</div>
+                    <div class="item-desc" data-i18n="menu_compartir_risotto_desc">Con trufa y crujiente de queso</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Raviolis de perdiz y trufa</div>
-                    <div class="item-desc">5 unidades</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_raviolis">Raviolis de perdiz y trufa</div>
+                    <div class="item-desc" data-i18n="menu_compartir_raviolis_desc">5 unidades</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Burrata con tomate de temporada</div>
-                    <div class="item-desc">Producto fresco de Km 0</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_burrata">Burrata con tomate de temporada</div>
+                    <div class="item-desc" data-i18n="menu_compartir_burrata_desc">Producto fresco de Km 0</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Zamburiñas al horno</div>
-                    <div class="item-desc">6 unidades</div>
+                    <div class="item-nombre" data-i18n="menu_compartir_zamburinas">Zamburiñas al horno</div>
+                    <div class="item-desc" data-i18n="menu_compartir_zamburinas_desc">6 unidades</div>
                 </div>
             </div>
         </div>
@@ -209,26 +225,27 @@
         <div class="menu-categoria">
             <div class="menu-categoria-header">
                 <div>
-                    <span class="menu-tag">Street Food</span>
-                    <h3><i class="fas fa-hamburger"></i> Street Food</h3>
+                    <span class="menu-tag" data-i18n="menu_streetfood_tag">Street Food</span>
+                    <h3><i class="fas fa-hamburger"></i> <span data-i18n="menu_streetfood_title">Street Food</span></h3>
                 </div>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Brioche de chipirones</div>
-                    <div class="item-desc">2 unidades</div>
+                    <div class="item-nombre" data-i18n="menu_streetfood_brioche">Brioche de chipirones</div>
+                    <div class="item-desc" data-i18n="menu_streetfood_brioche_desc">2 unidades</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Pollo Panko</div>
-                    <div class="item-desc">Crujiente y sabroso</div>
+                    <div class="item-nombre" data-i18n="menu_streetfood_pollo">Pollo Panko</div>
+                    <div class="item-desc" data-i18n="menu_streetfood_pollo_desc">Crujiente y sabroso</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Hamburguesa de vaca Dixcarlux</div>
-                    <div class="item-desc">Con foie, carne madurada 30 días</div>
+                    <div class="item-nombre" data-i18n="menu_streetfood_hamburguesa">Hamburguesa de vaca Dixcarlux</div>
+                    <div class="item-desc" data-i18n="menu_streetfood_hamburguesa_desc">Con foie, carne madurada 30 días
+                    </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Burguer de pollo estilo coreano</div>
-                    <div class="item-desc">Salsa gochujang y vegetales</div>
+                    <div class="item-nombre" data-i18n="menu_streetfood_burguer">Burguer de pollo estilo coreano</div>
+                    <div class="item-desc" data-i18n="menu_streetfood_burguer_desc">Salsa gochujang y vegetales</div>
                 </div>
             </div>
         </div>
@@ -239,26 +256,28 @@
         <div class="menu-categoria">
             <div class="menu-categoria-header">
                 <div>
-                    <span class="menu-tag">Guijuelo y su producto</span>
-                    <h3><i class="fas fa-piggy-bank"></i> Ibéricos de bellota</h3>
+                    <span class="menu-tag" data-i18n="menu_ibericos_tag">Guijuelo y su producto</span>
+                    <h3><i class="fas fa-piggy-bank"></i> <span data-i18n="menu_ibericos_title">Ibéricos de
+                            bellota</span></h3>
                 </div>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Jamón ibérico de bellota "5 Rosas"</div>
-                    <div class="item-desc">Cortado a mano</div>
+                    <div class="item-nombre" data-i18n="menu_ibericos_jamon">Jamón ibérico de bellota "5 Rosas"</div>
+                    <div class="item-desc" data-i18n="menu_ibericos_jamon_desc">Cortado a mano</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Lomo ibérico de bellota "5 Rosas"</div>
-                    <div class="item-desc">Curado, jugoso y sabroso</div>
+                    <div class="item-nombre" data-i18n="menu_ibericos_lomo">Lomo ibérico de bellota "5 Rosas"</div>
+                    <div class="item-desc" data-i18n="menu_ibericos_lomo_desc">Curado, jugoso y sabroso</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Secreto ibérico de bellota embuchado</div>
-                    <div class="item-desc">Curado 4 meses</div>
+                    <div class="item-nombre" data-i18n="menu_ibericos_secreto">Secreto ibérico de bellota embuchado
+                    </div>
+                    <div class="item-desc" data-i18n="menu_ibericos_secreto_desc">Curado 4 meses</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Tabla de quesos de la zona</div>
-                    <div class="item-desc">Selección de quesos artesanos</div>
+                    <div class="item-nombre" data-i18n="menu_ibericos_quesos">Tabla de quesos de la zona</div>
+                    <div class="item-desc" data-i18n="menu_ibericos_quesos_desc">Selección de quesos artesanos</div>
                 </div>
             </div>
         </div>
@@ -269,38 +288,39 @@
         <div class="menu-categoria">
             <div class="menu-categoria-header">
                 <div>
-                    <span class="menu-tag">Carnes</span>
-                    <h3><i class="fas fa-drumstick-bite"></i> Carnes</h3>
+                    <span class="menu-tag" data-i18n="menu_carnes_tag">Carnes</span>
+                    <h3><i class="fas fa-drumstick-bite"></i> <span data-i18n="menu_carnes_title">Carnes</span></h3>
                 </div>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Milhoja de solomillo ibérico</div>
-                    <div class="item-desc">Con foie</div>
+                    <div class="item-nombre" data-i18n="menu_carnes_milhoja">Milhoja de solomillo ibérico</div>
+                    <div class="item-desc" data-i18n="menu_carnes_milhoja_desc">Con foie</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Pluma ibérica</div>
-                    <div class="item-desc">Uno de nuestros platos estrella</div>
+                    <div class="item-nombre" data-i18n="menu_carnes_pluma">Pluma ibérica</div>
+                    <div class="item-desc" data-i18n="menu_carnes_pluma_desc">Uno de nuestros platos estrella</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Tataki de vaca Dixcarlux</div>
-                    <div class="item-desc">Maduración 30 días</div>
+                    <div class="item-nombre" data-i18n="menu_carnes_tataki">Tataki de vaca Dixcarlux</div>
+                    <div class="item-desc" data-i18n="menu_carnes_tataki_desc">Maduración 30 días</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Magret de pato</div>
-                    <div class="item-desc">Salsa hoisin y mango</div>
+                    <div class="item-nombre" data-i18n="menu_carnes_magret">Magret de pato</div>
+                    <div class="item-desc" data-i18n="menu_carnes_magret_desc">Salsa hoisin y mango</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Steak tartar de solomillo</div>
-                    <div class="item-desc">Preparado en el momento</div>
+                    <div class="item-nombre" data-i18n="menu_carnes_tartar">Steak tartar de solomillo</div>
+                    <div class="item-desc" data-i18n="menu_carnes_tartar_desc">Preparado en el momento</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Entrecot de vaca</div>
-                    <div class="item-desc">Maduración 30 días</div>
+                    <div class="item-nombre" data-i18n="menu_carnes_entrecot">Entrecot de vaca</div>
+                    <div class="item-desc" data-i18n="menu_carnes_entrecot_desc">Maduración 30 días</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Chuleta T-Bone de vaca</div>
-                    <div class="item-desc">Para 2 personas, maduración 40 días</div>
+                    <div class="item-nombre" data-i18n="menu_carnes_chuleta">Chuleta T-Bone de vaca</div>
+                    <div class="item-desc" data-i18n="menu_carnes_chuleta_desc">Para 2 personas, maduración 40 días
+                    </div>
                 </div>
             </div>
         </div>
@@ -311,18 +331,18 @@
         <div class="menu-categoria">
             <div class="menu-categoria-header">
                 <div>
-                    <span class="menu-tag">Marinos</span>
-                    <h3><i class="fas fa-fish"></i> Platos marinos</h3>
+                    <span class="menu-tag" data-i18n="menu_marinos_tag">Marinos</span>
+                    <h3><i class="fas fa-fish"></i> <span data-i18n="menu_marinos_title">Platos marinos</span></h3>
                 </div>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Pulpo</div>
-                    <div class="item-desc">Con parmentier de patata</div>
+                    <div class="item-nombre" data-i18n="menu_marinos_pulpo">Pulpo</div>
+                    <div class="item-desc" data-i18n="menu_marinos_pulpo_desc">Con parmentier de patata</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Salmón asado</div>
-                    <div class="item-desc">Con verduritas y teriyaki</div>
+                    <div class="item-nombre" data-i18n="menu_marinos_salmon">Salmón asado</div>
+                    <div class="item-desc" data-i18n="menu_marinos_salmon_desc">Con verduritas y teriyaki</div>
                 </div>
             </div>
         </div>
@@ -333,30 +353,30 @@
         <div class="menu-categoria">
             <div class="menu-categoria-header">
                 <div>
-                    <span class="menu-tag">Dulce</span>
-                    <h3><i class="fas fa-cake"></i> Postres</h3>
+                    <span class="menu-tag" data-i18n="menu_postres_tag">Dulce</span>
+                    <h3><i class="fas fa-cake"></i> <span data-i18n="menu_postres_title">Postres</span></h3>
                 </div>
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-nombre">Coulant de chocolate blanco</div>
-                    <div class="item-desc">10 minutos de elaboración</div>
+                    <div class="item-nombre" data-i18n="menu_postres_coulant">Coulant de chocolate blanco</div>
+                    <div class="item-desc" data-i18n="menu_postres_coulant_desc">10 minutos de elaboración</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Virókonos</div>
-                    <div class="item-desc">Surtido de helados</div>
+                    <div class="item-nombre" data-i18n="menu_postres_virokonos">Virókonos</div>
+                    <div class="item-desc" data-i18n="menu_postres_virokonos_desc">Surtido de helados</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Tarta de queso cremosa</div>
-                    <div class="item-desc">Nuestra versión casera</div>
+                    <div class="item-nombre" data-i18n="menu_postres_tarta">Tarta de queso cremosa</div>
+                    <div class="item-desc" data-i18n="menu_postres_tarta_desc">Nuestra versión casera</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Mousse de tiramisú</div>
-                    <div class="item-desc">Suave y esponjoso</div>
+                    <div class="item-nombre" data-i18n="menu_postres_mousse">Mousse de tiramisú</div>
+                    <div class="item-desc" data-i18n="menu_postres_mousse_desc">Suave y esponjoso</div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-nombre">Arroz con leche</div>
-                    <div class="item-desc">Receta tradicional</div>
+                    <div class="item-nombre" data-i18n="menu_postres_arroz">Arroz con leche</div>
+                    <div class="item-desc" data-i18n="menu_postres_arroz_desc">Receta tradicional</div>
                 </div>
             </div>
         </div>
@@ -368,12 +388,12 @@
             <div class="menu-regala-icono">
                 <i class="fas fa-gift"></i>
             </div>
-            <h2>Menús Regala</h2>
-            <h3>Regala gastronomía. Regala experiencia.</h3>
-            <p>Incluye dos consumiciones por persona.<br>
+            <h2 data-i18n="menu_regala_title">Menús Regala</h2>
+            <h3 data-i18n="menu_regala_subtitle">Regala gastronomía. Regala experiencia.</h3>
+            <p data-i18n="menu_regala_text">Incluye dos consumiciones por persona.<br>
                 Es imprescindible realizar reserva previa indicando el Menú Regala.<br>
                 Disponible únicamente a mesa completa.</p>
-            <a href="contacto.html" class="btn">Regalar experiencia</a>
+            <a href="contacto.html" class="btn" data-i18n="menu_regala_btn">Regalar experiencia</a>
         </div>
     </div>
 
@@ -382,9 +402,9 @@
         <div class="nota-menus">
             <i class="fas fa-info-circle"></i>
             <div>
-                <strong>Una cocina honesta, pensada para disfrutar sin prisas.</strong>
-                <p>Pan y servicio: 2,60€ · Pan sin gluten disponible bajo consulta. Todos nuestros platos son
-                    personalizables. Contáctanos con al menos 15 días de antelación.</p>
+                <strong data-i18n="menu_nota_title">Una cocina honesta, pensada para disfrutar sin prisas.</strong>
+                <p data-i18n="menu_nota_text">Pan y servicio: 2,60€ · Pan sin gluten disponible bajo consulta. Todos
+                    nuestros platos son personalizables. Contáctanos con al menos 15 días de antelación.</p>
             </div>
         </div>
     </div>
@@ -392,9 +412,10 @@
     <!-- ========== CTA ========== -->
     <div class="container">
         <div class="cta-menus">
-            <h3>¿Quieres descubrir nuestra carta?</h3>
-            <p>Déjate llevar por la experiencia Viró. Solicita información sin compromiso.</p>
-            <a href="https://virogastrobar.tucartadigital.com/" class="btn">Solicitar carta completa</a>
+            <h3 data-i18n="menu_cta_title">¿Quieres descubrir nuestra carta?</h3>
+            <p data-i18n="menu_cta_text">Déjate llevar por la experiencia Viró. Solicita información sin compromiso.</p>
+            <a href="https://virogastrobar.tucartadigital.com/" class="btn" data-i18n="menu_cta_btn">Solicitar carta
+                completa</a>
         </div>
     </div>
 
@@ -418,8 +439,9 @@
                     <img src="img/logo.svg" alt="Tripadvisor" class="social-svg">
                 </a>
             </div>
-            <p class="footer-copy">© 2026 Catering Viró · Gastronomía para eventos · <a href="aviso-legal.html">Aviso
-                    legal</a> | <a href="cookies.html">Política de cookies</a></p>
+            <p class="footer-copy">© 2026 Catering Viró · <span data-i18n="footer_copy">Gastronomía para eventos</span>
+                · <a href="aviso-legal.html" data-i18n="aviso_legal">Aviso legal</a> | <a href="cookies.html"
+                    data-i18n="cookies">Política de cookies</a></p>
         </div>
     </footer>
 
@@ -435,18 +457,19 @@
     </script>
     <script src="js/carrusel.js"></script>
     <script src="js/cookies.js"></script>
+    <script src="js/translations.js"></script>
 </body>
 <!-- BANNER DE COOKIES -->
 <div id="cookieBanner" class="cookie-banner" style="display: none;">
     <div class="cookie-banner-content">
-        <p>🍪 Usamos cookies propias y de terceros para mejorar tu experiencia. Puedes aceptar, rechazar o configurar tu
-            preferencia.
-            <a href="cookies.html">Más información</a>.
+        <p><span data-i18n="cookie_banner_text">🍪 Usamos cookies propias y de terceros para mejorar tu experiencia.
+                Puedes aceptar, rechazar o configurar tu preferencia.</span>
+            <a href="cookies.html" data-i18n="cookie_mas_info">Más información</a>.
         </p>
         <div class="cookie-buttons">
-            <button id="acceptCookiesBtn" class="btn-cookie accept">Aceptar todas</button>
-            <button id="rejectCookiesBtn" class="btn-cookie reject">Rechazar</button>
-            <button id="configCookiesBtn" class="btn-cookie config">Configurar</button>
+            <button id="acceptCookiesBtn" class="btn-cookie accept" data-i18n="cookie_aceptar">Aceptar todas</button>
+            <button id="rejectCookiesBtn" class="btn-cookie reject" data-i18n="cookie_rechazar">Rechazar</button>
+            <button id="configCookiesBtn" class="btn-cookie config" data-i18n="cookie_configurar">Configurar</button>
         </div>
     </div>
 </div>
@@ -454,36 +477,40 @@
 <!-- PANEL DE CONFIGURACIÓN (Inicialmente oculto) -->
 <div id="cookieSettings" class="cookie-settings" style="display: none;">
     <div class="cookie-settings-content">
-        <h3>Configuración de Cookies</h3>
-        <p>Puedes activar o desactivar las categorías de cookies según tu preferencia.</p>
+        <h3 data-i18n="cookie_settings_title">Configuración de Cookies</h3>
+        <p data-i18n="cookie_settings_text">Puedes activar o desactivar las categorías de cookies según tu preferencia.
+        </p>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="necessaryCookies" disabled checked>
-                <strong>Cookies Necesarias</strong> (Siempre activas)
+                <strong data-i18n="cookie_necessary">Cookies Necesarias</strong> (Siempre activas)
             </label>
-            <p>Necesarias para el funcionamiento básico de la web.</p>
+            <p data-i18n="cookie_necessary_desc">Necesarias para el funcionamiento básico de la web.</p>
         </div>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="functionalCookies">
-                <strong>Cookies Funcionales</strong>
+                <strong data-i18n="cookie_functional">Cookies Funcionales</strong>
             </label>
-            <p>Permiten recordar tus preferencias para una mejor experiencia (idioma, región).</p>
+            <p data-i18n="cookie_functional_desc">Permiten recordar tus preferencias para una mejor experiencia (idioma,
+                región).</p>
         </div>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="analyticsCookies">
-                <strong>Cookies de Análisis</strong>
+                <strong data-i18n="cookie_analytics">Cookies de Análisis</strong>
             </label>
-            <p>Nos ayudan a medir y mejorar el rendimiento de nuestra web (Google Analytics).</p>
+            <p data-i18n="cookie_analytics_desc">Nos ayudan a medir y mejorar el rendimiento de nuestra web (Google
+                Analytics).</p>
         </div>
 
         <div class="cookie-buttons">
-            <button id="savePreferencesBtn" class="btn-cookie accept">Guardar preferencias</button>
-            <button id="closeSettingsBtn" class="btn-cookie reject">Cerrar</button>
+            <button id="savePreferencesBtn" class="btn-cookie accept" data-i18n="cookie_guardar">Guardar
+                preferencias</button>
+            <button id="closeSettingsBtn" class="btn-cookie reject" data-i18n="cookie_cerrar">Cerrar</button>
         </div>
     </div>
 </div>

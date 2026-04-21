@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Castillo de Puente Congosto | Castillo medieval para eventos</title>
+    <title data-i18n="castillo_title">Castillo de Puente Congosto | Castillo medieval para eventos</title>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
@@ -30,12 +30,17 @@
                     </a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="menu.html">Menús</a></li>
-                    <li><a href="espacios.html">Espacios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                    <li><a href="servicios.html" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="menu.html" data-i18n="nav_menus">Menús</a></li>
+                    <li><a href="espacios.html" data-i18n="nav_espacios">Espacios</a></li>
+                    <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
                 </ul>
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -47,41 +52,53 @@
     <div class="container">
         <div class="espacio-detalle">
             <div class="espacio-header">
-                <h1>Castillo de Puente Congosto</h1>
-                <div class="ubicacion"><i class="fas fa-map-marker-alt"></i> Puente Congosto, Salamanca</div>
+                <h1 data-i18n="castillo_title">Castillo de Puente Congosto</h1>
+                <div class="ubicacion"><i class="fas fa-map-marker-alt"></i> <span data-i18n="castillo_location">Puente
+                        Congosto, Salamanca</span></div>
             </div>
 
             <div class="info-principal">
                 <img src="img/Puente-Congosto-18.png" alt="Castillo de Puente Congosto">
                 <div class="descripcion-larga">
-                    <p>El Castillo de Puente Congosto es una fortaleza medieval del siglo XII, restaurada y convertida
-                        en un espacio único para celebraciones. Ubicado estratégicamente sobre el río Tormes, ofrece
-                        unas vistas espectaculares.</p>
-                    <p>Sus murallas, torreones y patio de armas crean un ambiente mágico e inolvidable. Es el lugar
-                        perfecto para bodas románticas, cenas de gala y eventos históricos.</p>
-                    <p>La combinación de su arquitectura medieval con los servicios modernos lo convierten en un espacio
-                        singular. Al caer la noche, la iluminación del castillo crea una atmósfera de cuento.</p>
-                    <p>Viró Gastrobar es el catering oficial para eventos en este espacio, garantizando la máxima
-                        calidad gastronómica y servicio profesional.</p>
+                    <p data-i18n="castillo_desc1">El Castillo de Puente Congosto es una fortaleza medieval del siglo
+                        XII, restaurada y convertida en un espacio único para celebraciones. Ubicado estratégicamente
+                        sobre el río Tormes, ofrece unas vistas espectaculares.</p>
+                    <p data-i18n="castillo_desc2">Sus murallas, torreones y patio de armas crean un ambiente mágico e
+                        inolvidable. Es el lugar perfecto para bodas románticas, cenas de gala y eventos históricos.</p>
+                    <p data-i18n="castillo_desc3">La combinación de su arquitectura medieval con los servicios modernos
+                        lo convierten en un espacio singular. Al caer la noche, la iluminación del castillo crea una
+                        atmósfera de cuento.</p>
+                    <p data-i18n="castillo_desc4">Viró Gastrobar es el catering oficial para eventos en este espacio,
+                        garantizando la máxima calidad gastronómica y servicio profesional.</p>
                 </div>
             </div>
 
             <div class="caracteristicas-detalle">
-                <h3><i class="fas fa-list-check"></i> Características del espacio</h3>
+                <h3><i class="fas fa-list-check"></i> <span data-i18n="castillo_features_title">Características del
+                        espacio</span></h3>
                 <div class="caracteristicas-grid">
-                    <span><i class="fas fa-users"></i> Capacidad: 100-200 personas</span>
-                    <span><i class="fas fa-camera"></i> Vistas al río Tormes</span>
-                    <span><i class="fas fa-history"></i> Castillo del siglo XII</span>
-                    <span><i class="fas fa-tree"></i> Entorno natural privilegiado</span>
-                    <span><i class="fas fa-parking"></i> Parking para invitados</span>
-                    <span><i class="fas fa-campground"></i> Patio de armas para ceremonias</span>
-                    <span><i class="fas fa-church"></i> Espacio para ceremonias civiles</span>
-                    <span><i class="fas fa-wine-bottle"></i> Bodega medieval</span>
+                    <span><i class="fas fa-users"></i> <span data-i18n="castillo_feature1">Capacidad: 100-200
+                            personas</span></span>
+                    <span><i class="fas fa-camera"></i> <span data-i18n="castillo_feature2">Vistas al río
+                            Tormes</span></span>
+                    <span><i class="fas fa-history"></i> <span data-i18n="castillo_feature3">Castillo del siglo
+                            XII</span></span>
+                    <span><i class="fas fa-tree"></i> <span data-i18n="castillo_feature4">Entorno natural
+                            privilegiado</span></span>
+                    <span><i class="fas fa-parking"></i> <span data-i18n="castillo_feature5">Parking para
+                            invitados</span></span>
+                    <span><i class="fas fa-campground"></i> <span data-i18n="castillo_feature6">Patio de armas para
+                            ceremonias</span></span>
+                    <span><i class="fas fa-church"></i> <span data-i18n="castillo_feature7">Espacio para ceremonias
+                            civiles</span></span>
+                    <span><i class="fas fa-wine-bottle"></i> <span data-i18n="castillo_feature8">Bodega
+                            medieval</span></span>
                 </div>
             </div>
 
             <div class="galeria">
-                <h3><i class="fas fa-images"></i> Galería de imágenes</h3>
+                <h3><i class="fas fa-images"></i> <span data-i18n="castillo_gallery_title">Galería de imágenes</span>
+                </h3>
                 <div class="galeria-grid">
                     <img src="img/castillo.png" alt="Vista exterior del castillo">
                     <img src="img/mesas.png" alt="Patio de armas">
@@ -91,8 +108,10 @@
             </div>
 
             <div class="mapa-espacio">
-                <h3><i class="fas fa-map-marked-alt"></i> ¿Dónde estamos?</h3>
-                <p>El castillo se encuentra en Puente Congosto, a solo 45 minutos de Salamanca capital.</p>
+                <h3><i class="fas fa-map-marked-alt"></i> <span data-i18n="castillo_map_title">¿Dónde estamos?</span>
+                </h3>
+                <p data-i18n="castillo_map_text">El castillo se encuentra en Puente Congosto, a solo 45 minutos de
+                    Salamanca capital.</p>
                 <div class="mapa-embed">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400802.4888425055!2d-5.605607609300606!3d40.5083487878264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3fa79b519662b7%3A0x81b3d0860fe0319!2sC.%20del%20Castillo%2C%2014%2C%2037748%20Puente%20del%20Congosto%2C%20Salamanca!5e0!3m2!1ses!2ses!4v1775734422938!5m2!1ses!2ses"
@@ -103,12 +122,14 @@
             </div>
 
             <div class="cta-espacio">
-                <h3>¿Quieres celebrar tu evento en este castillo?</h3>
-                <p>Contáctanos para más información sobre disponibilidad y presupuesto personalizado.</p>
-                <a href="contacto.html" class="btn">Solicitar información</a>
+                <h3 data-i18n="castillo_cta_title">¿Quieres celebrar tu evento en este castillo?</h3>
+                <p data-i18n="castillo_cta_text">Contáctanos para más información sobre disponibilidad y presupuesto
+                    personalizado.</p>
+                <a href="contacto.html" class="btn"><span data-i18n="castillo_cta_btn">Solicitar información</span></a>
             </div>
 
-            <a href="espacios.html" class="btn btn-volver"><i class="fas fa-arrow-left"></i> Volver a espacios</a>
+            <a href="espacios.html" class="btn btn-volver"><i class="fas fa-arrow-left"></i> <span
+                    data-i18n="castillo_back_btn">Volver a espacios</span></a>
         </div>
     </div>
 
@@ -132,8 +153,9 @@
                     <img src="img/logo.svg" alt="Tripadvisor" class="social-svg">
                 </a>
             </div>
-            <p class="footer-copy">© 2026 Catering Viró · Gastronomía para eventos · <a href="aviso-legal.html">Aviso
-                    legal</a> | <a href="cookies.html">Política de cookies</a></p>
+            <p class="footer-copy">© 2026 Catering Viró · <span data-i18n="footer_copy">Gastronomía para eventos</span>
+                · <a href="aviso-legal.html" data-i18n="aviso_legal">Aviso legal</a> | <a href="cookies.html"
+                    data-i18n="cookies">Política de cookies</a></p>
         </div>
     </footer>
 
@@ -147,18 +169,19 @@
         }
     </script>
     <script src="js/cookies.js"></script>
+    <script src="js/translations.js"></script>
 </body>
 <!-- BANNER DE COOKIES -->
 <div id="cookieBanner" class="cookie-banner" style="display: none;">
     <div class="cookie-banner-content">
-        <p>🍪 Usamos cookies propias y de terceros para mejorar tu experiencia. Puedes aceptar, rechazar o configurar tu
-            preferencia.
-            <a href="cookies.html">Más información</a>.
+        <p><span data-i18n="cookie_banner_text">🍪 Usamos cookies propias y de terceros para mejorar tu experiencia.
+                Puedes aceptar, rechazar o configurar tu preferencia.</span>
+            <a href="cookies.html" data-i18n="cookie_mas_info">Más información</a>.
         </p>
         <div class="cookie-buttons">
-            <button id="acceptCookiesBtn" class="btn-cookie accept">Aceptar todas</button>
-            <button id="rejectCookiesBtn" class="btn-cookie reject">Rechazar</button>
-            <button id="configCookiesBtn" class="btn-cookie config">Configurar</button>
+            <button id="acceptCookiesBtn" class="btn-cookie accept" data-i18n="cookie_aceptar">Aceptar todas</button>
+            <button id="rejectCookiesBtn" class="btn-cookie reject" data-i18n="cookie_rechazar">Rechazar</button>
+            <button id="configCookiesBtn" class="btn-cookie config" data-i18n="cookie_configurar">Configurar</button>
         </div>
     </div>
 </div>
@@ -166,36 +189,40 @@
 <!-- PANEL DE CONFIGURACIÓN (Inicialmente oculto) -->
 <div id="cookieSettings" class="cookie-settings" style="display: none;">
     <div class="cookie-settings-content">
-        <h3>Configuración de Cookies</h3>
-        <p>Puedes activar o desactivar las categorías de cookies según tu preferencia.</p>
+        <h3 data-i18n="cookie_settings_title">Configuración de Cookies</h3>
+        <p data-i18n="cookie_settings_text">Puedes activar o desactivar las categorías de cookies según tu preferencia.
+        </p>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="necessaryCookies" disabled checked>
-                <strong>Cookies Necesarias</strong> (Siempre activas)
+                <strong data-i18n="cookie_necessary">Cookies Necesarias</strong> (Siempre activas)
             </label>
-            <p>Necesarias para el funcionamiento básico de la web.</p>
+            <p data-i18n="cookie_necessary_desc">Necesarias para el funcionamiento básico de la web.</p>
         </div>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="functionalCookies">
-                <strong>Cookies Funcionales</strong>
+                <strong data-i18n="cookie_functional">Cookies Funcionales</strong>
             </label>
-            <p>Permiten recordar tus preferencias para una mejor experiencia (idioma, región).</p>
+            <p data-i18n="cookie_functional_desc">Permiten recordar tus preferencias para una mejor experiencia (idioma,
+                región).</p>
         </div>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="analyticsCookies">
-                <strong>Cookies de Análisis</strong>
+                <strong data-i18n="cookie_analytics">Cookies de Análisis</strong>
             </label>
-            <p>Nos ayudan a medir y mejorar el rendimiento de nuestra web (Google Analytics).</p>
+            <p data-i18n="cookie_analytics_desc">Nos ayudan a medir y mejorar el rendimiento de nuestra web (Google
+                Analytics).</p>
         </div>
 
         <div class="cookie-buttons">
-            <button id="savePreferencesBtn" class="btn-cookie accept">Guardar preferencias</button>
-            <button id="closeSettingsBtn" class="btn-cookie reject">Cerrar</button>
+            <button id="savePreferencesBtn" class="btn-cookie accept" data-i18n="cookie_guardar">Guardar
+                preferencias</button>
+            <button id="closeSettingsBtn" class="btn-cookie reject" data-i18n="cookie_cerrar">Cerrar</button>
         </div>
     </div>
 </div>

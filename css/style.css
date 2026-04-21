@@ -195,7 +195,7 @@ header {
     font-style: italic;
     color: #ffffff;
     margin-left: 0.8rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: -0.02em;
 }
 
@@ -1175,4 +1175,45 @@ html {
     font-size: 1.2rem;
     letter-spacing: 2px;
     color: #1a1a1a;
+}
+
+/* ========== SELECTOR DE IDIOMA ========== */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-left: 1rem;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    color: #c0a070;
+}
+
+.lang-btn.active {
+    color: #c0a070;
+    font-weight: 600;
+}
+
+.lang-separator {
+    color: #555;
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .language-selector {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Servicios | Catering Viró · Catering profesional para eventos</title>
+    <title data-i18n="servicios_hero_title">Servicios | Catering Viró · Catering profesional para eventos</title>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
@@ -25,17 +25,22 @@
             <nav class="navbar">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/viro.png" alt="Catering Viró - Logo">
+                        <img src="img/logoviro.png" alt="Catering Viró - Logo">
                         <span class="logo-texto">Catering Viró</span>
                     </a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="menu.html">Menús</a></li>
-                    <li><a href="espacios.html">Espacios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                    <li><a href="servicios.html" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="menu.html" data-i18n="nav_menus">Menús</a></li>
+                    <li><a href="espacios.html" data-i18n="nav_espacios">Espacios</a></li>
+                    <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
                 </ul>
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -46,10 +51,10 @@
     <!-- ========== HERO SERVICIOS ========== -->
     <section class="servicios-hero">
         <div class="container">
-            <div class="section-subtitle">Qué hacemos</div>
-            <h1>Servicios de catering<br>a medida</h1>
-            <p>Más de 20 años creando experiencias gastronómicas únicas. Te asesoramos en cada paso para que tu evento
-                sea inolvidable.</p>
+            <div class="section-subtitle" data-i18n="servicios_hero_subtitle">Qué hacemos</div>
+            <h1 data-i18n="servicios_hero_title">Servicios de catering<br>a medida</h1>
+            <p data-i18n="servicios_hero_text">Más de 20 años creando experiencias gastronómicas únicas. Te asesoramos
+                en cada paso para que tu evento sea inolvidable.</p>
         </div>
     </section>
 
@@ -59,22 +64,22 @@
             <div class="slide active">
                 <img src="img/catering.png" alt="Catering para eventos">
                 <div class="slide-content">
-                    <h2>Gastronomía que transforma momentos</h2>
-                    <p>Más de 20 años creando experiencias únicas</p>
+                    <h2 data-i18n="slide1_title">Gastronomía que transforma momentos</h2>
+                    <p data-i18n="slide1_desc">Más de 20 años creando experiencias únicas</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="img/catering_lugar2.png" alt="Cocina de autor">
                 <div class="slide-content">
-                    <h2>Cocina de autor</h2>
-                    <p>Ingredientes de temporada y un equipo apasionado</p>
+                    <h2 data-i18n="slide2_title">Cocina de autor</h2>
+                    <p data-i18n="slide2_desc">Ingredientes de temporada y un equipo apasionado</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="img/foto_catering14.png" alt="Eventos exclusivos">
                 <div class="slide-content">
-                    <h2>Eventos exclusivos</h2>
-                    <p>Bodas, corporativos, fiestas privadas</p>
+                    <h2 data-i18n="slide3_title">Eventos exclusivos</h2>
+                    <p data-i18n="slide3_desc">Bodas, corporativos, fiestas privadas</p>
                 </div>
             </div>
             <button class="slider-btn prev" aria-label="Anterior"></button>
@@ -90,24 +95,24 @@
     <!-- ========== INTRO + VALORES ========== -->
     <div class="container">
         <div class="intro-servicios">
-            <h2>Gastronomía con alma</h2>
-            <p>Cada evento es único, por eso diseñamos propuestas personalizadas que se adaptan a tus necesidades,
-                gustos y presupuesto.</p>
+            <h2 data-i18n="servicios_intro_title">Gastronomía con alma</h2>
+            <p data-i18n="servicios_intro_text">Cada evento es único, por eso diseñamos propuestas personalizadas que se
+                adaptan a tus necesidades, gustos y presupuesto.</p>
             <div class="valores-destacados">
                 <div class="valor-destacado">
                     <i class="fas fa-seedling"></i>
-                    <h4>Producto fresco</h4>
-                    <p>Kilómetro cero y temporada</p>
+                    <h4 data-i18n="servicios_valor1">Producto fresco</h4>
+                    <p data-i18n="servicios_valor1_desc">Kilómetro cero y temporada</p>
                 </div>
                 <div class="valor-destacado">
                     <i class="fas fa-heart"></i>
-                    <h4>Cocina de autor</h4>
-                    <p>Recetas con identidad</p>
+                    <h4 data-i18n="servicios_valor2">Cocina de autor</h4>
+                    <p data-i18n="servicios_valor2_desc">Recetas con identidad</p>
                 </div>
                 <div class="valor-destacado">
                     <i class="fas fa-calendar-alt"></i>
-                    <h4>Organización total</h4>
-                    <p>Nos encargamos de todo</p>
+                    <h4 data-i18n="servicios_valor3">Organización total</h4>
+                    <p data-i18n="servicios_valor3_desc">Nos encargamos de todo</p>
                 </div>
             </div>
         </div>
@@ -120,17 +125,19 @@
                 <i class="fas fa-ring"></i>
             </div>
             <div class="servicio-contenido">
-                <h3>Catering para Bodas</h3>
-                <p>El día más importante merece una propuesta gastronómica a la altura. Creamos menús que emocionan, con
-                    opciones para todos los gustos y una presentación cuidada al detalle.</p>
+                <h3 data-i18n="servicio_bodas_title">Catering para Bodas</h3>
+                <p data-i18n="servicio_bodas_desc">El día más importante merece una propuesta gastronómica a la altura.
+                    Creamos menús que emocionan, con opciones para todos los gustos y una presentación cuidada al
+                    detalle.</p>
                 <ul class="servicio-caracteristicas">
-                    <li>Menús degustación personalizados</li>
-                    <li>Asesoramiento en la elección del espacio (fincas, castillos, palacios)</li>
-                    <li>Coordinador de boda exclusivo</li>
-                    <li>Prueba de menú sin coste adicional</li>
-                    <li>Opción de tarta nupcial y brindis incluido</li>
+                    <li data-i18n="servicio_bodas_feature1">Menús degustación personalizados</li>
+                    <li data-i18n="servicio_bodas_feature2">Asesoramiento en la elección del espacio (fincas, castillos,
+                        palacios)</li>
+                    <li data-i18n="servicio_bodas_feature3">Coordinador de boda exclusivo</li>
+                    <li data-i18n="servicio_bodas_feature4">Prueba de menú sin coste adicional</li>
+                    <li data-i18n="servicio_bodas_feature5">Opción de tarta nupcial y brindis incluido</li>
                 </ul>
-                <a href="contacto.html" class="btn">Consultar para boda</a>
+                <a href="contacto.html" class="btn" data-i18n="servicio_bodas_btn">Consultar para boda</a>
             </div>
         </div>
     </div>
@@ -142,39 +149,42 @@
                 <i class="fas fa-briefcase"></i>
             </div>
             <div class="servicio-contenido">
-                <h3>Eventos Corporativos</h3>
-                <p>Congresos, cenas de empresa, presentaciones de producto o coffee breaks. Ofrecemos un servicio
-                    profesional, discreto y con la máxima calidad.</p>
+                <h3 data-i18n="servicio_corporativo_title">Eventos Corporativos</h3>
+                <p data-i18n="servicio_corporativo_desc">Congresos, cenas de empresa, presentaciones de producto o
+                    coffee breaks. Ofrecemos un servicio profesional, discreto y con la máxima calidad.</p>
                 <ul class="servicio-caracteristicas">
-                    <li>Formatos: cóctel, buffet, servicio a mesa o food stations</li>
-                    <li>Personal especializado y uniformado</li>
-                    <li>Adaptación a horarios y ritmos de trabajo</li>
-                    <li>Opción de menús ejecutivos y desayunos de trabajo</li>
-                    <li>Gestión de alergias e intolerancias</li>
+                    <li data-i18n="servicio_corporativo_feature1">Formatos: cóctel, buffet, servicio a mesa o food
+                        stations</li>
+                    <li data-i18n="servicio_corporativo_feature2">Personal especializado y uniformado</li>
+                    <li data-i18n="servicio_corporativo_feature3">Adaptación a horarios y ritmos de trabajo</li>
+                    <li data-i18n="servicio_corporativo_feature4">Opción de menús ejecutivos y desayunos de trabajo</li>
+                    <li data-i18n="servicio_corporativo_feature5">Gestión de alergias e intolerancias</li>
                 </ul>
-                <a href="contacto.html" class="btn">Solicitar información corporativa</a>
+                <a href="contacto.html" class="btn" data-i18n="servicio_corporativo_btn">Solicitar información
+                    corporativa</a>
             </div>
         </div>
     </div>
 
-    <!-- ========== SERVICIO 3: CHEF PRIVADO Y SHOWCOOKING (Servicio real de Viró) ========== -->
+    <!-- ========== SERVICIO 3: CHEF PRIVADO Y SHOWCOOKING ========== -->
     <div class="container">
         <div class="servicio-item">
             <div class="servicio-icono">
                 <i class="fas fa-fire"></i>
             </div>
             <div class="servicio-contenido">
-                <h3>Chef Privado & Showcooking</h3>
-                <p>Llevamos la experiencia del restaurante a tu evento. Nuestro chef diseña y prepara el menú in situ,
-                    con espectáculo en vivo para sorprender a tus invitados.</p>
+                <h3 data-i18n="servicio_chef_title">Chef Privado & Showcooking</h3>
+                <p data-i18n="servicio_chef_desc">Llevamos la experiencia del restaurante a tu evento. Nuestro chef
+                    diseña y prepara el menú in situ, con espectáculo en vivo para sorprender a tus invitados.</p>
                 <ul class="servicio-caracteristicas">
-                    <li>Chef privado (Pablo García) con más de 20 años de experiencia</li>
-                    <li>Cortador de jamón profesional (Andrés Rodríguez)</li>
-                    <li>Showcooking: preparación de platos en vivo</li>
-                    <li>Estaciones de paella, sushi, pasta o carne a la piedra</li>
-                    <li>Bartenders profesionales con coctelería de autor</li>
+                    <li data-i18n="servicio_chef_feature1">Chef privado (Pablo García) con más de 20 años de experiencia
+                    </li>
+                    <li data-i18n="servicio_chef_feature2">Cortador de jamón profesional (Andrés Rodríguez)</li>
+                    <li data-i18n="servicio_chef_feature3">Showcooking: preparación de platos en vivo</li>
+                    <li data-i18n="servicio_chef_feature4">Estaciones de paella, sushi, pasta o carne a la piedra</li>
+                    <li data-i18n="servicio_chef_feature5">Bartenders profesionales con coctelería de autor</li>
                 </ul>
-                <a href="contacto.html" class="btn">Reservar chef privado</a>
+                <a href="contacto.html" class="btn" data-i18n="servicio_chef_btn">Reservar chef privado</a>
             </div>
         </div>
     </div>
@@ -186,16 +196,18 @@
                 <i class="fas fa-tree"></i>
             </div>
             <div class="servicio-contenido">
-                <h3>Eventos en Fincas Exclusivas</h3>
-                <p>Organizamos tu evento en los espacios más singulares: Finca Las Ahijaderas de Pedro Llen, Castillo
-                    Puente Congosto, Palacio de Congresos y más.</p>
+                <h3 data-i18n="servicio_fincas_title">Eventos en Fincas Exclusivas</h3>
+                <p data-i18n="servicio_fincas_desc">Organizamos tu evento en los espacios más singulares: Finca Las
+                    Ahijaderas de Pedro Llen, Castillo Puente Congosto, Palacio de Congresos y más.</p>
                 <ul class="servicio-caracteristicas">
-                    <li>Más de 50 espacios colaboradores en Salamanca y toda España</li>
-                    <li>Organización integral del evento</li>
-                    <li>Vajilla exclusiva y montaje profesional</li>
-                    <li>Logística completa para eventos desde pequeños cócteles hasta bodas de +300 personas</li>
+                    <li data-i18n="servicio_fincas_feature1">Más de 50 espacios colaboradores en Salamanca y toda España
+                    </li>
+                    <li data-i18n="servicio_fincas_feature2">Organización integral del evento</li>
+                    <li data-i18n="servicio_fincas_feature3">Vajilla exclusiva y montaje profesional</li>
+                    <li data-i18n="servicio_fincas_feature4">Logística completa para eventos desde pequeños cócteles
+                        hasta bodas de +300 personas</li>
                 </ul>
-                <a href="espacios.html" class="btn">Descubrir espacios</a>
+                <a href="espacios.html" class="btn" data-i18n="servicio_fincas_btn">Descubrir espacios</a>
             </div>
         </div>
     </div>
@@ -207,16 +219,17 @@
                 <i class="fas fa-gift"></i>
             </div>
             <div class="servicio-contenido">
-                <h3>Menús Regala</h3>
-                <p>Regala gastronomía. Regala experiencia. Tarjetas regalo para que tus seres queridos disfruten de la
-                    mejor cocina.</p>
+                <h3 data-i18n="servicio_regala_title">Menús Regala</h3>
+                <p data-i18n="servicio_regala_desc">Regala gastronomía. Regala experiencia. Tarjetas regalo para que tus
+                    seres queridos disfruten de la mejor cocina.</p>
                 <ul class="servicio-caracteristicas">
-                    <li>Incluye dos consumiciones por persona</li>
-                    <li>Disponible únicamente a mesa completa</li>
-                    <li>Imprescindible reserva previa indicando "Menú Regala"</li>
-                    <li>Ideal para cumpleaños, aniversarios o detalles especiales</li>
+                    <li data-i18n="servicio_regala_feature1">Incluye dos consumiciones por persona</li>
+                    <li data-i18n="servicio_regala_feature2">Disponible únicamente a mesa completa</li>
+                    <li data-i18n="servicio_regala_feature3">Imprescindible reserva previa indicando "Menú Regala"</li>
+                    <li data-i18n="servicio_regala_feature4">Ideal para cumpleaños, aniversarios o detalles especiales
+                    </li>
                 </ul>
-                <a href="contacto.html" class="btn">Regalar experiencia</a>
+                <a href="contacto.html" class="btn" data-i18n="servicio_regala_btn">Regalar experiencia</a>
             </div>
         </div>
     </div>
@@ -224,37 +237,43 @@
     <!-- ========== TABLA COMPARATIVA DE SERVICIOS ========== -->
     <div class="container">
         <div class="tabla-servicios">
-            <h2>Elige el formato que necesitas</h2>
+            <h2 data-i18n="tabla_servicios_title">Elige el formato que necesitas</h2>
             <div class="tabla-grid">
                 <div class="tabla-columna">
-                    <h3>Cóctel</h3>
+                    <h3 data-i18n="tabla_coctel">Cóctel</h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Ideal para networking</li>
-                        <li><i class="fas fa-check"></i> 15-20 propuestas gastronómicas</li>
-                        <li><i class="fas fa-check"></i> Servicio continuo 2-3h</li>
-                        <li><i class="fas fa-check"></i> Personal por cada 30 invitados</li>
+                        <li data-i18n="tabla_coctel_feature1"><i class="fas fa-check"></i> Ideal para networking</li>
+                        <li data-i18n="tabla_coctel_feature2"><i class="fas fa-check"></i> 15-20 propuestas
+                            gastronómicas</li>
+                        <li data-i18n="tabla_coctel_feature3"><i class="fas fa-check"></i> Servicio continuo 2-3h</li>
+                        <li data-i18n="tabla_coctel_feature4"><i class="fas fa-check"></i> Personal por cada 30
+                            invitados</li>
                     </ul>
-                    <span class="precio-servicio">Desde 45€/pax</span>
+                    <span class="precio-servicio" data-i18n="tabla_coctel_price">Desde 45€/pax</span>
                 </div>
                 <div class="tabla-columna">
-                    <h3>Buffet</h3>
+                    <h3 data-i18n="tabla_buffet">Buffet</h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Autoservicio o asistido</li>
-                        <li><i class="fas fa-check"></i> Gran variedad de platos</li>
-                        <li><i class="fas fa-check"></i> Ideal para comidas informales</li>
-                        <li><i class="fas fa-check"></i> Opción de estaciones temáticas</li>
+                        <li data-i18n="tabla_buffet_feature1"><i class="fas fa-check"></i> Autoservicio o asistido</li>
+                        <li data-i18n="tabla_buffet_feature2"><i class="fas fa-check"></i> Gran variedad de platos</li>
+                        <li data-i18n="tabla_buffet_feature3"><i class="fas fa-check"></i> Ideal para comidas informales
+                        </li>
+                        <li data-i18n="tabla_buffet_feature4"><i class="fas fa-check"></i> Opción de estaciones
+                            temáticas</li>
                     </ul>
-                    <span class="precio-servicio">Desde 55€/pax</span>
+                    <span class="precio-servicio" data-i18n="tabla_buffet_price">Desde 55€/pax</span>
                 </div>
                 <div class="tabla-columna">
-                    <h3>Banquete</h3>
+                    <h3 data-i18n="tabla_banquete">Banquete</h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Servicio a mesa tradicional</li>
-                        <li><i class="fas fa-check"></i> Menús de 3-5 pasos</li>
-                        <li><i class="fas fa-check"></i> Ideal para bodas y galas</li>
-                        <li><i class="fas fa-check"></i> Protocolo y elegancia</li>
+                        <li data-i18n="tabla_banquete_feature1"><i class="fas fa-check"></i> Servicio a mesa tradicional
+                        </li>
+                        <li data-i18n="tabla_banquete_feature2"><i class="fas fa-check"></i> Menús de 3-5 pasos</li>
+                        <li data-i18n="tabla_banquete_feature3"><i class="fas fa-check"></i> Ideal para bodas y galas
+                        </li>
+                        <li data-i18n="tabla_banquete_feature4"><i class="fas fa-check"></i> Protocolo y elegancia</li>
                     </ul>
-                    <span class="precio-servicio">Desde 75€/pax</span>
+                    <span class="precio-servicio" data-i18n="tabla_banquete_price">Desde 75€/pax</span>
                 </div>
             </div>
         </div>
@@ -263,28 +282,33 @@
     <!-- ========== PROCESO DE TRABAJO ========== -->
     <div class="container">
         <div class="proceso">
-            <h2>¿Cómo trabajamos?</h2>
-            <p>Un proceso sencillo y transparente para que solo tengas que preocuparte de disfrutar</p>
+            <h2 data-i18n="proceso_title">¿Cómo trabajamos?</h2>
+            <p data-i18n="proceso_desc">Un proceso sencillo y transparente para que solo tengas que preocuparte de
+                disfrutar</p>
             <div class="proceso-grid">
                 <div class="proceso-paso">
                     <div class="paso-numero">1</div>
-                    <h4>Cuéntanos tu idea</h4>
-                    <p>Nos reunimos (online o presencial) para conocer tus necesidades, gustos y presupuesto.</p>
+                    <h4 data-i18n="proceso_paso1">Cuéntanos tu idea</h4>
+                    <p data-i18n="proceso_paso1_desc">Nos reunimos (online o presencial) para conocer tus necesidades,
+                        gustos y presupuesto.</p>
                 </div>
                 <div class="proceso-paso">
                     <div class="paso-numero">2</div>
-                    <h4>Diseñamos la propuesta</h4>
-                    <p>Te preparamos un menú personalizado y un presupuesto detallado sin compromiso.</p>
+                    <h4 data-i18n="proceso_paso2">Diseñamos la propuesta</h4>
+                    <p data-i18n="proceso_paso2_desc">Te preparamos un menú personalizado y un presupuesto detallado sin
+                        compromiso.</p>
                 </div>
                 <div class="proceso-paso">
                     <div class="paso-numero">3</div>
-                    <h4>Degustación y ajustes</h4>
-                    <p>Pruebas el menú y hacemos los cambios que necesites hasta que sea perfecto.</p>
+                    <h4 data-i18n="proceso_paso3">Degustación y ajustes</h4>
+                    <p data-i18n="proceso_paso3_desc">Pruebas el menú y hacemos los cambios que necesites hasta que sea
+                        perfecto.</p>
                 </div>
                 <div class="proceso-paso">
                     <div class="paso-numero">4</div>
-                    <h4>Día del evento</h4>
-                    <p>Nos encargamos de todo: montaje, servicio y recogida. Tú solo disfruta.</p>
+                    <h4 data-i18n="proceso_paso4">Día del evento</h4>
+                    <p data-i18n="proceso_paso4_desc">Nos encargamos de todo: montaje, servicio y recogida. Tú solo
+                        disfruta.</p>
                 </div>
             </div>
         </div>
@@ -293,7 +317,7 @@
     <!-- ========== CLIENTES QUE CONFÍAN EN NOSOTROS ========== -->
     <div class="container">
         <div class="clientes">
-            <h2>Clientes que confían en nosotros</h2>
+            <h2 data-i18n="clientes_title">Clientes que confían en nosotros</h2>
             <div class="clientes-grid">
                 <div class="cliente-item">FISAN (Ibéricos)</div>
                 <div class="cliente-item">Aljomar</div>
@@ -306,9 +330,10 @@
     <!-- ========== CTA CONTACTO ========== -->
     <div class="container">
         <div class="cta-servicios">
-            <h3>¿Tienes un evento en mente?</h3>
-            <p>Cuéntanos tu idea y te asesoramos sin compromiso. Estamos para ayudarte.</p>
-            <a href="contacto.html" class="btn">Solicitar presupuesto sin compromiso</a>
+            <h3 data-i18n="cta_servicios_title">¿Tienes un evento en mente?</h3>
+            <p data-i18n="cta_servicios_text">Cuéntanos tu idea y te asesoramos sin compromiso. Estamos para ayudarte.
+            </p>
+            <a href="contacto.html" class="btn" data-i18n="cta_servicios_btn">Solicitar presupuesto sin compromiso</a>
         </div>
     </div>
 
@@ -332,8 +357,9 @@
                     <img src="img/logo.svg" alt="Tripadvisor" class="social-svg">
                 </a>
             </div>
-            <p class="footer-copy">© 2026 Catering Viró · Gastronomía para eventos · <a href="aviso-legal.html">Aviso
-                    legal</a> | <a href="cookies.html">Política de cookies</a></p>
+            <p class="footer-copy">© 2026 Catering Viró · <span data-i18n="footer_copy">Gastronomía para eventos</span>
+                · <a href="aviso-legal.html" data-i18n="aviso_legal">Aviso legal</a> | <a href="cookies.html"
+                    data-i18n="cookies">Política de cookies</a></p>
         </div>
     </footer>
 
@@ -349,18 +375,19 @@
     </script>
     <script src="js/carrusel.js"></script>
     <script src="js/cookies.js"></script>
+    <script src="js/translations.js"></script>
 </body>
 <!-- BANNER DE COOKIES -->
 <div id="cookieBanner" class="cookie-banner" style="display: none;">
     <div class="cookie-banner-content">
-        <p>🍪 Usamos cookies propias y de terceros para mejorar tu experiencia. Puedes aceptar, rechazar o configurar tu
-            preferencia.
-            <a href="cookies.html">Más información</a>.
+        <p><span data-i18n="cookie_banner_text">🍪 Usamos cookies propias y de terceros para mejorar tu experiencia.
+                Puedes aceptar, rechazar o configurar tu preferencia.</span>
+            <a href="cookies.html" data-i18n="cookie_mas_info">Más información</a>.
         </p>
         <div class="cookie-buttons">
-            <button id="acceptCookiesBtn" class="btn-cookie accept">Aceptar todas</button>
-            <button id="rejectCookiesBtn" class="btn-cookie reject">Rechazar</button>
-            <button id="configCookiesBtn" class="btn-cookie config">Configurar</button>
+            <button id="acceptCookiesBtn" class="btn-cookie accept" data-i18n="cookie_aceptar">Aceptar todas</button>
+            <button id="rejectCookiesBtn" class="btn-cookie reject" data-i18n="cookie_rechazar">Rechazar</button>
+            <button id="configCookiesBtn" class="btn-cookie config" data-i18n="cookie_configurar">Configurar</button>
         </div>
     </div>
 </div>
@@ -368,36 +395,40 @@
 <!-- PANEL DE CONFIGURACIÓN (Inicialmente oculto) -->
 <div id="cookieSettings" class="cookie-settings" style="display: none;">
     <div class="cookie-settings-content">
-        <h3>Configuración de Cookies</h3>
-        <p>Puedes activar o desactivar las categorías de cookies según tu preferencia.</p>
+        <h3 data-i18n="cookie_settings_title">Configuración de Cookies</h3>
+        <p data-i18n="cookie_settings_text">Puedes activar o desactivar las categorías de cookies según tu preferencia.
+        </p>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="necessaryCookies" disabled checked>
-                <strong>Cookies Necesarias</strong> (Siempre activas)
+                <strong data-i18n="cookie_necessary">Cookies Necesarias</strong> (Siempre activas)
             </label>
-            <p>Necesarias para el funcionamiento básico de la web.</p>
+            <p data-i18n="cookie_necessary_desc">Necesarias para el funcionamiento básico de la web.</p>
         </div>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="functionalCookies">
-                <strong>Cookies Funcionales</strong>
+                <strong data-i18n="cookie_functional">Cookies Funcionales</strong>
             </label>
-            <p>Permiten recordar tus preferencias para una mejor experiencia (idioma, región).</p>
+            <p data-i18n="cookie_functional_desc">Permiten recordar tus preferencias para una mejor experiencia (idioma,
+                región).</p>
         </div>
 
         <div class="cookie-category">
             <label>
                 <input type="checkbox" id="analyticsCookies">
-                <strong>Cookies de Análisis</strong>
+                <strong data-i18n="cookie_analytics">Cookies de Análisis</strong>
             </label>
-            <p>Nos ayudan a medir y mejorar el rendimiento de nuestra web (Google Analytics).</p>
+            <p data-i18n="cookie_analytics_desc">Nos ayudan a medir y mejorar el rendimiento de nuestra web (Google
+                Analytics).</p>
         </div>
 
         <div class="cookie-buttons">
-            <button id="savePreferencesBtn" class="btn-cookie accept">Guardar preferencias</button>
-            <button id="closeSettingsBtn" class="btn-cookie reject">Cerrar</button>
+            <button id="savePreferencesBtn" class="btn-cookie accept" data-i18n="cookie_guardar">Guardar
+                preferencias</button>
+            <button id="closeSettingsBtn" class="btn-cookie reject" data-i18n="cookie_cerrar">Cerrar</button>
         </div>
     </div>
 </div>

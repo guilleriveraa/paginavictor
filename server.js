@@ -186,7 +186,7 @@ app.post('/api/enviar-contacto', async (req, res) => {
                         <p>Saludos cordiales,<br>
                         <strong>Catering Viró</strong></p>
                         <div class="footer">
-                            <p>📞 923 58 04 31 | 📧 virogastrobar@gmail.com</p>
+                            <p>📞 923 58 04 31 | 📧 catering@grupoviro.es</p>
                         </div>
                     </div>
                 </body>

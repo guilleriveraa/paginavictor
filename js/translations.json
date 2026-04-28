@@ -531,7 +531,16 @@
         "castillo_cta_title": "¿Quieres celebrar tu evento en este castillo?",
         "castillo_cta_text": "Contáctanos para más información sobre disponibilidad y presupuesto personalizado.",
         "castillo_cta_btn": "Solicitar información",
-        "castillo_back_btn": "Volver a espacios"
+        "castillo_back_btn": "Volver a espacios",
+        "espacios_hero_title": "Catering Viró · Los mejores lugares para tu evento",
+        "espacios_hero_text": "Seleccionamos los mejores lugares para que tu celebración sea inolvidable.",
+        "espacios_cta_title": "¿Quieres visitar alguno de estos espacios?",
+        "espacios_cta_text": "Contáctanos para más información sobre disponibilidad y presupuesto personalizado.",
+        "espacios_cta_btn": "Solicitar información",
+        "espacios_back_btn": "Volver a espacios",
+        "espacio_palacio_badge": "Palacio · Elegancia",
+        "espacii_castillo_badge": "Castillo · Historia",
+        "espacio_finca_badge": "Finca · Naturaleza"
     },
     "en": {
         "nav_inicio": "Home",
@@ -1065,6 +1074,15 @@
         "castillo_cta_title": "Do you want to celebrate your event at this castle?",
         "castillo_cta_text": "Contact us for more information about availability and personalized budget.",
         "castillo_cta_btn": "Request information",
-        "castillo_back_btn": "Back to venues"
+        "castillo_back_btn": "Back to venues",
+        "espacios_hero_title": "Catering Viró · The best places for your event",
+        "espacios_hero_text": "We select the best places for your celebration to be unforgettable.",
+        "espacios_cta_title": "Do you want to visit any of these venues?",
+        "espacios_cta_text": "Contact us for more information about availability and personalized budget.",
+        "espacios_cta_btn": "Request information",
+        "espacios_back_btn": "Back to venues",
+        "espacio_palacio_badge": "Palace · Elegance",
+        "espacio_castillo_badge": "Castle · History",
+        "espacio_finca_badge": "Estate · Nature"
     }
 }
